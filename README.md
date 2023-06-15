@@ -1,1 +1,1 @@
-Collection of work-related dotfiles/config files for tracking their evolution and for easier sharing.
+Collection of work-related dotfiles/config files for tracking evolution, easier transfer across machines and sharing.
