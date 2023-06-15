@@ -1,0 +1,46 @@
+" VIMRC
+
+set nocompatible
+set noswapfile
+set hidden
+filetype plugin indent on
+syntax on
+
+
+" Leader
+" let mapleader = " "
+nnoremap <space> :
+
+
+let $RTP=split(&runtimepath, ',')[0]
+let $RC="$HOME/.vim/vimrc"
+
+set number relativenumber
+set showmatch
+set ruler
+set showcmd
+set encoding=utf-8
+
+set hlsearch ignorecase incsearch smartcase
+
+set autoread
+set backspace=indent,eol,start
+set clipboard=unnamed,unnamedplus
+set mouse=a
+set nowrap
+set termguicolors
+
+set showmatch
+set showcmd
+
+
+colorscheme elflord
+
+set cursorline
+
+
+
+" for finding files
+set wildmenu
+setlocal wildignore=*.pyc
+
