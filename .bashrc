@@ -5,7 +5,12 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# silence bell
+# Use bash aliases
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
+fi
+
+# Silence bell
 set bell-style none
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
