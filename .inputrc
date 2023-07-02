@@ -1,3 +1,6 @@
+# to reload .inputrc:
+# bind -f ~/.inputrc
+
 # do not bell on tab-completion
 set bell-style none
 
