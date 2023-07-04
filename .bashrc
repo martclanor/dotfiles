@@ -15,4 +15,3 @@ set bell-style none
 
 # Initialize conda
 eval "$(conda shell.bash hook)"
-

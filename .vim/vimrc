@@ -41,4 +41,3 @@ set termguicolors
 " for finding files
 set wildmenu
 setlocal wildignore=*.pyc
-

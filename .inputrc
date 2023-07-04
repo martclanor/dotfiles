@@ -21,4 +21,3 @@ set keymap vi-command
 set show-mode-in-prompt on
 set vi-ins-mode-string "+"
 set vi-cmd-mode-string ":"
-

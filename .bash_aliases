@@ -4,4 +4,3 @@ alias eca25='cd /project/134938_eca25/eca25_nzt && conda activate /project/13493
 
 # slurm
 alias mysacct='sacct --format="JobName,State,Elapsed,Timelimit,NCPUS,CPUTime,MaxRSS,MaxVMSize,ReqMem"'
-
