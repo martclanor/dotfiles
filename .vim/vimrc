@@ -4,8 +4,6 @@ set nocompatible
 set noswapfile
 set hidden
 filetype plugin indent on
-syntax on
-
 
 " Leader
 " let mapleader = " "
@@ -32,12 +30,16 @@ set nowrap
 set showmatch
 set showcmd
 
-
-colorscheme koehler
-
 set cursorline
+set t_Co=256
 set termguicolors
+
+syntax on
+let g:onedark_termcolors=256
+colorscheme onedark
 
 " for finding files
 set wildmenu
 setlocal wildignore=*.pyc
+
+
