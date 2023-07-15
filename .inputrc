@@ -22,3 +22,4 @@ set keymap vi-command
 set show-mode-in-prompt on
 set vi-ins-mode-string "+"  # Indicator for insert mode
 set vi-cmd-mode-string ":"  # Indicator for command mode
+set keyseq-timeout 0  # Remove delay when switching modes
