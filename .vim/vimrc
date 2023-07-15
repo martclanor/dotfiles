@@ -34,6 +34,12 @@ set cursorline
 set t_Co=256
 set termguicolors
 
+" Set cursor to line in insert mode and to block anywhere else
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[2 q"
+" Set timeout settings to 0 for smooth transition between modes
+set timeoutlen=0 ttimeoutlen=0
+
 syntax on
 let g:onedark_termcolors=256
 colorscheme onedark
