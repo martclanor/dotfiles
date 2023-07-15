@@ -12,4 +12,4 @@ parse_python_env() {
          echo "($CONDA_DEFAULT_ENV)"
      fi
 }
-export PS1="\[$(tput setaf 45)\]\$(parse_python_env) \[$(tput setaf 195)\][\[$(tput setaf 39)\]\u\[$(tput setaf 195)\]@\[$(tput setaf 45)\]\h \[$(tput setaf 214)\]\W\[$(tput setaf 39)\] \$(parse_git_branch)\[$(tput setaf 195)\]]\$\[$(tput sgr0)\] "
+export PS1="\[$(tput setaf 45)\]\$(parse_python_env) \[$(tput setaf 195)\][\[$(tput setaf 39)\]\u\[$(tput setaf 195)\]@\[$(tput setaf 39)\]\h \[$(tput setaf 214)\]\W\[$(tput setaf 45)\] \$(parse_git_branch)\[$(tput setaf 195)\]]\$\[$(tput sgr0)\] "
