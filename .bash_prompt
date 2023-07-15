@@ -2,6 +2,7 @@
 
 # Prevent venv from changing the prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+# Define functions
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -12,4 +13,23 @@ parse_python_env() {
          echo "($CONDA_DEFAULT_ENV)"
      fi
 }
-export PS1="\[$(tput setaf 45)\]\$(parse_python_env) \[$(tput setaf 195)\][\[$(tput setaf 39)\]\u\[$(tput setaf 195)\]@\[$(tput setaf 39)\]\h \[$(tput setaf 214)\]\W\[$(tput setaf 45)\] \$(parse_git_branch)\[$(tput setaf 195)\]]\$\[$(tput sgr0)\] "
+
+# Define color aliases using tput
+LIGHT_BLUE="\[$(tput setaf 45)\]"
+WHITE="\[$(tput setaf 195)\]"
+DARK_BLUE="\[$(tput setaf 39)\]"
+ORANGE="\[$(tput setaf 214)\]"
+RESET="\[$(tput sgr0)\]"
+
+# Constructing PS1
+export PS1=""  # Start with an empty prompt
+PS1+="${LIGHT_BLUE}\$(parse_python_env) "  # Python env information
+PS1+="${WHITE}["  # Start bracket
+PS1+="${DARK_BLUE}\u"  # Username
+PS1+="${WHITE}@"  # @ symbol
+PS1+="${DARK_BLUE}\h "  # Hostname
+PS1+="${ORANGE}\W"  # Working directory base name
+PS1+="${LIGHT_BLUE} \$(parse_git_branch)"  # Git branch info
+PS1+="${WHITE}]"  # End bracket
+PS1+="${WHITE}\$"  # $ or # symbol (based on effective UID)
+PS1+="${RESET} "  # Reset color to default
