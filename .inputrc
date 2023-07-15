@@ -1,23 +1,24 @@
-# to reload .inputrc:
-# bind -f ~/.inputrc
+# Configuration for Bash input
 
-# do not bell on tab-completion
+# To reload this .inputrc, run: bind -f ~/.inputrc
+
+# Disable audible bell on tab-completion
 set bell-style none
 
+# Enable meta key
 set meta-flag on
 set input-meta on
-set convert-meta off
-set output-meta on
+set convert-meta off  # Prevent Bash from trying to convert meta characters
+set output-meta on  # Allow meta characters to be output
 
-# Completed names which are symbolic links to
-# directories have a slash appended.
+# Append a slash to symbolic links to directories in auto-complete
 set mark-symlinked-directories on
 
-# set vi mode
+# Set the command line editing to vi mode
 set editing-mode vi
 set keymap vi-command
 
-# set vi mode indicator
+# Show current vi mode (insert/command) in prompt
 set show-mode-in-prompt on
-set vi-ins-mode-string "+"
-set vi-cmd-mode-string ":"
+set vi-ins-mode-string "+"  # Indicator for insert mode
+set vi-cmd-mode-string ":"  # Indicator for command mode

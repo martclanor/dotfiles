@@ -1,51 +1,49 @@
 " VIMRC
 
-set nocompatible
-set noswapfile
-set hidden
-filetype plugin indent on
+" General settings
+set nocompatible                " Turn off vi-compatible mode
+set noswapfile                  " Disable swapfile creation
+set hidden                      " Allow switching between unsaved buffers
+set ruler                       " Show the cursor position all the time
+set showcmd                     " Show partial command in the last line of the screen
+set autoread                    " Automatically read files when changed from the outside
+set mouse=a                     " Enable mouse usage in all modes
+set nowrap                      " Disable line wrapping
+set backspace=indent,eol,start  " Configure backspace behavior
+set encoding=utf-8              " Set encoding to UTF-8
+syntax on                       " Turn syntax highlighting on
 
-" Leader
-" let mapleader = " "
-nnoremap <space> :
+" Path settings
+let $RTP=split(&runtimepath, ',')[0]   " Set the runtime path
+let $RC="$HOME/.vim/vimrc"              " Set the path to this vimrc
 
+" Search and matching settings
+set hlsearch ignorecase incsearch smartcase " Enable search settings and case sensitivity
+set showmatch                              " Highlight matching brackets
 
-let $RTP=split(&runtimepath, ',')[0]
-let $RC="$HOME/.vim/vimrc"
+" Clipboard settings
+set clipboard=unnamed,unnamedplus    " Share clipboard with system clipboard
 
-set number relativenumber
-set showmatch
-set ruler
-set showcmd
-set encoding=utf-8
+" Display line numbers
+set number relativenumber  " Show line numbers and relative line numbers
 
-set hlsearch ignorecase incsearch smartcase
+" Highlighting current line
+set cursorline            " Highlight the screen line of the cursor
 
-set autoread
-set backspace=indent,eol,start
-set clipboard=unnamed,unnamedplus
-set mouse=a
-set nowrap
-
-set showmatch
-set showcmd
-
-set cursorline
-set t_Co=256
-set termguicolors
-
-" Set cursor to line in insert mode and to block anywhere else
-let &t_SI = "\e[5 q"
-let &t_EI = "\e[2 q"
-" Set timeout settings to 0 for smooth transition between modes
-set timeoutlen=0 ttimeoutlen=0
-
-syntax on
+" Terminal color settings
+set t_Co=256              " Set the number of colors that Vim can use
+set termguicolors         " Enable true color support
 let g:onedark_termcolors=256
-colorscheme onedark
+colorscheme onedark       " Set color scheme
 
-" for finding files
+" Cursor settings in different modes
+let &t_SI = "\e[5 q"     " Set cursor to line in insert mode
+let &t_EI = "\e[2 q"     " Set cursor to block in other modes
+set timeoutlen=0 ttimeoutlen=0 " Set timeout settings to 0 for smooth transition between modes
+
+" Leader key configuration
+" let mapleader = " "
+nnoremap <space> :      " Map the space key to ':' in normal mode
+
+" For finding files
 set wildmenu
-setlocal wildignore=*.pyc
-
-

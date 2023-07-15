@@ -1,6 +1,6 @@
-# .bash_profile
+# Configuration for Bash profile
 
-# Get the aliases and functions
+# Source .bashrc upon login to a bash shell
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi

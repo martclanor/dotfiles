@@ -1,6 +1,17 @@
+# Configuration for Conda (package/env manager)
+
+# Enable SSL verification for secure connections
 ssl_verify: true
+
+# Specify the channels to search for packages
 channels:
   - conda-forge
+
+# Set channel priority to strict, ensuring higher priority for specified channels
 channel_priority: strict
+
+# Disable automatic activation of the base environment upon conda init
 auto_activate_base: false
+
+# Disable changing the command prompt (PS1) upon conda init
 changeps1: false

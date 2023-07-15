@@ -1,4 +1,4 @@
-# .bash_prompt
+# Configuration for Bash prompt
 
 # Prevent venv from changing the prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
