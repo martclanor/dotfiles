@@ -1,5 +1,7 @@
 [user]
 	name = Mart Clanor
 	email = mart.dayniel.clanor@witteveenbos.com
+[init]
+	defaultBranch = main
 [core]
 	editor = vim
