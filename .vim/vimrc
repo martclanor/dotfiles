@@ -3,6 +3,7 @@
 " General settings
 set nocompatible                " Turn off vi-compatible mode
 set noswapfile                  " Disable swapfile creation
+set belloff=all                 " Disable audio bell
 set hidden                      " Allow switching between unsaved buffers
 set ruler                       " Show the cursor position all the time
 set showcmd                     " Show partial command in the last line of the screen
