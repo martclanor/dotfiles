@@ -18,6 +18,9 @@ fi
 # Silence bell
 set bell-style none
 
+# Ensure that TERM is set
+export TERM=xterm-256color
+
 # Bash history
 export HISTSIZE=  # Unlimited
 export HISTFILESIZE=  # Unlimited
