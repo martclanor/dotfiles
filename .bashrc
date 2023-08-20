@@ -27,7 +27,4 @@ shopt -s histappend  # Write to file for every command entered
 # Initialize conda
 if command -v conda >/dev/null 2>&1; then
     eval "$(conda shell.bash hook)"
-else
-    echo "Warning: conda is not installed or not in the system's PATH."
-    echo "Please make sure conda is properly installed and configured."
 fi
