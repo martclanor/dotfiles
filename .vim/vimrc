@@ -44,7 +44,6 @@ set timeoutlen=0 ttimeoutlen=0 " Set timeout settings to 0 for smooth transition
 
 " Leader key configuration
 " let mapleader = " "
-nnoremap <space> :      " Map the space key to ':' in normal mode
 
 " For finding files
 set wildmenu
