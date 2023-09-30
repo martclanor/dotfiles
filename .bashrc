@@ -31,3 +31,9 @@ shopt -s histappend  # Write to file for every command entered
 if command -v conda >/dev/null 2>&1; then
     eval "$(conda shell.bash hook)"
 fi
+
+# Slurm log tail
+slog() {
+    tail -f "slurm_log/$1"
+}
+
