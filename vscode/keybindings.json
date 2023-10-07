@@ -464,7 +464,7 @@
         "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
     },
     {
-        "key": "alt+h",
+        "key": "alt+m",
         "command": "interactive.history.focus"
     },
     {
@@ -1030,7 +1030,7 @@
     {
         "key": "ctrl+alt+j",
         "command": "interactive.history.next",
-        "when": "!suggestWidgetVisible && resourceScheme == 'vscode-interactive' && interactiveInputCursorAtBoundary != 'none' && interactiveInputCursorAtBoundary != 'top'"
+        "when": "!suggestWidgetVisible && activeEditor == 'workbench.editor.interactive' && interactiveInputCursorAtBoundary != 'none' && interactiveInputCursorAtBoundary != 'top'"
     },
     {
         "key": "down",
@@ -1040,7 +1040,7 @@
     {
         "key": "ctrl+alt+k",
         "command": "interactive.history.previous",
-        "when": "!suggestWidgetVisible && resourceScheme == 'vscode-interactive' && interactiveInputCursorAtBoundary != 'bottom' && interactiveInputCursorAtBoundary != 'none'"
+        "when": "!suggestWidgetVisible && activeEditor == 'workbench.editor.interactive' && interactiveInputCursorAtBoundary != 'bottom' && interactiveInputCursorAtBoundary != 'none'"
     },
     {
         "key": "up",
@@ -1270,7 +1270,7 @@
         "command": "dendron.configureRaw"
     },
     {
-        "key": "up",
+        "key": "k",
         "command": "editor.action.scrollUpHover",
         "when": "editorHoverFocused"
     },
@@ -1290,11 +1290,6 @@
         "when": "interactivePlaygroundFocus && !editorTextFocus"
     },
     {
-        "key": "up",
-        "command": "interactiveEditor.arrowOutUp",
-        "when": "interactiveEditorFocused && interactiveEditorHasProvider && interactiveEditorInnerCursorFirst"
-    },
-    {
         "key": "ctrl+shift+m",
         "command": "-workbench.actions.view.problems",
         "when": "workbench.panel.markers.view.active"
@@ -1306,10 +1301,6 @@
     {
         "key": "ctrl+shift+n",
         "command": "-workbench.action.newWindow"
-    },
-    {
-        "key": "ctrl+shift+m",
-        "command": "workbench.action.minimizeOtherEditors"
     },
     {
         "key": "ctrl+shift+v",
@@ -1431,11 +1422,6 @@
         "command": "workbench.view.extension.test"
     },
     {
-        "key": "shift+space",
-        "command": "editor.action.triggerParameterHints",
-        "when": "editorHasSignatureHelpProvider && editorTextFocus"
-    },
-    {
         "key": "ctrl+shift+space",
         "command": "-editor.action.triggerParameterHints",
         "when": "editorHasSignatureHelpProvider && editorTextFocus"
@@ -1446,7 +1432,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "k",
+        "key": "shift+space",
         "command": "editor.action.pageUpHover",
         "when": "editorHoverFocused"
     },
@@ -1456,7 +1442,7 @@
         "when": "editorHoverFocused"
     },
     {
-        "key": "j",
+        "key": "space",
         "command": "editor.action.pageDownHover",
         "when": "editorHoverFocused"
     },
@@ -1522,12 +1508,6 @@
         "command": "-workbench.action.moveEditorToLastGroup"
     },
     {
-        "command": "vscode-neovim.send",
-        "key": "space",
-        "when": "editorTextFocus && neovim.mode == normal",
-        "args": "<Space>",
-    },
-    {
         "key": "alt+0",
         "command": "-workbench.action.lastEditorInGroup"
     },
@@ -1563,5 +1543,122 @@
         "key": "escape",
         "command": "-interactive.input.clear",
         "when": "!LinkedEditingInputVisible && !accessibilityHelpWidgetVisible && !breakpointWidgetVisible && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible && !exceptionWidgetVisible && !findWidgetVisible && !inSnippetMode && !isComposing && !markersNavigationVisible && !notificationToastsVisible && !parameterHintsVisible && !renameInputVisible && !selectionAnchorSet && !suggestWidgetVisible && activeEditor == 'workbench.editor.interactive'"
-    }
+    },
+    {
+        "key": "alt+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "vscode-neovim.ctrl-b",
+        "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "ctrl+shift+m",
+        "command": "workbench.action.maximizeEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "jupyter.createnewinteractive"
+    },
+    {
+        "key": "g h",
+        "command": "editor.action.showHover",
+        "when": "editorHoverVisible"
+    },
+    {
+        "key": "ctrl+k ctrl+i",
+        "command": "-workbench.action.terminal.focusHover",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalIsOpen || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "-jumpToPrevSnippetPlaceholder",
+        "when": "editorTextFocus && hasPrevTabstop && inSnippetMode"
+    },
+    {
+        "key": "alt+p",
+        "command": "jupyter.gotoNextCellInFile",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+alt+]",
+        "command": "-jupyter.gotoNextCellInFile",
+        "when": "editorTextFocus && jupyter.hascodecells && !jupyter.webExtension && !notebookEditorFocused"
+    },
+    {
+        "key": "space",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'",
+        "args": "<C-d>"
+    },
+    {
+        "key": "shift+space",
+        "command": "vscode-neovim.send",
+        "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && neovim.mode != 'insert'",
+        "args": "<C-u>"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+=",
+        "command": "zoombar-vscode.zoomIn"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "zoombar-vscode.zoomOut"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "-redo"
+    },
+    {
+        "key": "ctrl+shift+z",
+        "command": "zoombar-vscode.selectZoom"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.actions.view.problems"
+    },
+    {
+        "key": "j",
+        "command": "editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "down",
+        "command": "-editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "h",
+        "command": "editor.action.scrollLeftHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "left",
+        "command": "-editor.action.scrollLeftHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "l",
+        "command": "editor.action.scrollRightHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "right",
+        "command": "-editor.action.scrollRightHover",
+        "when": "editorHoverFocused"
+    },
 ]

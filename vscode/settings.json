@@ -30,14 +30,17 @@
         "Windows PowerShell": {
             "path": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
         }
-	},
+    },
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": "on",
     "notebook.lineNumbers": "on",
     "autoDocstring.docstringFormat": "numpy",
-    "python.formatting.provider": "black",
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+
     },
     "terminal.integrated.gpuAcceleration": "on",
     "black-formatter.args": [
@@ -47,7 +50,7 @@
     "isort.args": [
         "__profile",
         "black",
-	],
+    ],
     "git.ignoreLegacyWarning": true,
     "vscode-neovim.neovimExecutablePaths.win32": "D:\\Users\\clam6\\nvim-win64\\bin\\nvim.exe",
     "editor.glyphMargin": true,
@@ -70,26 +73,14 @@
     "editor.rulers": [
         88,
     ],
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-python.black-formatter",
     "python.analysis.completeFunctionParens": true,
-    "python.formatting.autopep8Path": "",
     "workbench.sideBar.location": "right",
     "files.refactoring.autoSave": false,
-	"editor.minimap.renderCharacters": false,
-    "code-runner.fileDirectoryAsCwd": true,
-    "editor.semanticTokenColorCustomizations": {
-
-    },
+    "editor.minimap.renderCharacters": false,
+    "editor.semanticTokenColorCustomizations": {},
     "problems.decorations.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
-    "python.analysis.diagnosticSeverityOverrides": {
-        "reportMissingModuleSource": "none"
-    },
-    "python.linting.flake8Args": [
-        "--max-line-length=88",
-        "--ignore=E501,W503,E402,C901"
-    ],
     "peacock.favoriteColors": [
         {
             "name": "Angular Red",
@@ -127,7 +118,7 @@
             "name": "Vue Green",
             "value": "#42b883"
         }
-	],
+    ],
     "workbench.editor.pinnedTabSizing": "compact",
     "peacock.affectSideBarBorder": true,
     "editor.parameterHints.enabled": false,
@@ -142,7 +133,6 @@
     "workbench.editor.openPositioning": "last",
     "workbench.editor.limit.value": 20,
     "workbench.editor.revealIfOpen": true,
-    "workbench.layoutControl.enabled": false,
     "workbench.editor.tabCloseButton": "off",
     "workbench.settings.openDefaultKeybindings": true,
     "zenMode.centerLayout": false,
@@ -152,7 +142,6 @@
     "scm.diffDecorationsGutterPattern": {
         "added": true
     },
-    "workbench.colorTheme": "Default Dark+ Experimental",
     "search.showLineNumbers": true,
     "zenMode.hideStatusBar": false,
     "scm.alwaysShowRepositories": true,
@@ -160,34 +149,54 @@
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorWidth": 10,
-    "notebook.logging": true,
     "codesnap.roundedCorners": false,
     "csv-preview.capitalizeHeaders": false,
     "gitlens.currentLine.enabled": false,
     "editor.colorDecorators": false,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "workbench.preferredDarkColorTheme": "Default Dark+ Experimental",
-    "workbench.preferredHighContrastColorTheme": "Default Dark+ Experimental",
     "git.ignoreMissingGitWarning": true,
     "interactiveWindow.collapseCellInputCode": "never",
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
-    "interactiveWindow.restore": true,
-    "jupyter.interactiveWindow.creationMode": "single",
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "explorer.compactFolders": false,
     "editor.codeLens": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.command": false,
     "gitlens.codeLens.recentChange.command": false,
-    "customWindowZoom.zoomLevelChangeValue": 0.01,
     "markdown.marp.enableHtml": true,
     "markdown.marp.exportType": "html",
     "markdown.marp.strictPathResolutionDuringExport": true,
-    "workbench.editor.untitled.hint": "hidden",
     "peacock.affectTabActiveBorder": true,
     "jupyter.askForKernelRestart": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ],
+    "typescript.tsserver.web.projectWideIntellisense.enabled": false,
+    "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "evenBetterToml.formatter.allowedBlankLines": 2,
+    "editor.formatOnSave": true,
+    "editor.mouseWheelZoom": true,
+    "emmet.useInlineCompletions": true,
+    "notebook.confirmDeleteRunningCell": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "oneDarkPro.italic": false,
+    "oneDarkPro.vivid": false,
+    "flake8.showNotifications": "always",
+    "flake8.args": [
+        "--ignore=E203,W503,W504",
+        "--max-line-length=88"
+    ],
+    "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
+    "black-formatter.showNotifications": "always",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
     "editor.minimap.enabled": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0.2676050217395348,
+    "zoombar.zoomUnit": 5,
+    "workbench.editor.empty.hint": "hidden",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "explorer.compactFolders": false,
 }
