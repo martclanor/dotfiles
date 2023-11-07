@@ -1,29 +1,17 @@
 # Configuration for Python Debugger (pdb)
 
-# Alias for "print"
-alias p pp
+# Print a dictionary, sorted. %1 is the dict, %2 is the prefix for the names.
+alias p_ for k in sorted(%1.keys()): print(f"%2{k.ljust(max(len(s) for s in %1.keys()))} = {%1[k]}")
 
-# Alias for listing context around the current line
-alias ll l .
+# Print the member variables of a thing.
+alias pi p_ %1.__dict__ %1.
 
-# Breakpoint handling
-# 'break' command with a specified condition
-alias b break
+# Print the member variables of self.
+alias ps pi self
 
-# 'delete' command to remove breakpoints
-alias cl clear
+# Print the locals.
+alias pl p_ locals() local:
 
-# Enable tab completion
-set complete
-
-# Pretty print by default
-set print pretty
-
-# Automatically list source code when landing in a pdb prompt
-set auto list
-
-# Automatically open post-mortem debugging on an unhandled exception
-set auto pdb
-
-# Show source code during traceback
-set print stack trace
+# Next and list, and step and list.
+alias nl n;;l
+alias sl s;;l
