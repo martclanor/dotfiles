@@ -43,7 +43,7 @@ let &t_EI = "\e[2 q"     " Set cursor to block in other modes
 set timeoutlen=0 ttimeoutlen=0 " Set timeout settings to 0 for smooth transition between modes
 
 " Leader key configuration
-" let mapleader = " "
+let mapleader = ","
 
 " For finding files
 set wildmenu
