@@ -1,0 +1,84 @@
+<!DOCTYPE shortcuts>
+<qgsshortcuts version="1.0" locale="en_US">
+    <action name="Temporary Scratch Layer…" shortcut="Ctrl+Alt+V"/>
+    <action name="New GeoPackage Layer…" shortcut="Ctrl+Shift+N"/>
+    <action name="Layer Styling" shortcut="F7"/>
+    <action name="Deselect Features from the Current Active Layer" shortcut="Ctrl+Shift+A"/>
+    <action name="Select Feature(s)" shortcut="Ctrl+F"/>
+    <action name="Undo" shortcut="Ctrl+Z"/>
+    <action name="Toolbox" shortcut="Ctrl+Alt+D"/>
+    <action name="Add PostGIS Layers…" shortcut="Ctrl+Shift+D"/>
+    <action name="Toggle Map Only" shortcut="Ctrl+Shift+Tab"/>
+    <action name="mActionCatchForCustomization" shortcut="Ctrl+M"/>
+    <action name="Open Attribute Table (Visible Features)" shortcut="F1"/>
+    <action name="Zoom to Selection" shortcut="Ctrl+J"/>
+    <action name="New 3D Map View" shortcut="Ctrl+Alt+M"/>
+    <action name="Show Spatial Bookmarks" shortcut="Ctrl+Shift+B"/>
+    <action name="Open Attribute Table" shortcut="Alt+T"/>
+    <action name="Refresh" shortcut="F5"/>
+    <action name="Measure Area" shortcut="Ctrl+Shift+J"/>
+    <action name="New Print Layout…" shortcut="Ctrl+P"/>
+    <action name="Redo" shortcut="Ctrl+Shift+Z"/>
+    <action name="Enable Tracing" shortcut="T"/>
+    <action name="Add WMS/WMTS Layer…" shortcut="Ctrl+Shift+W"/>
+    <action name="Layout Manager…" shortcut="Ctrl+Alt+Q"/>
+    <action name="Select Features by Expression…" shortcut="Ctrl+F3"/>
+    <action name="Show Spatial Bookmark Manager" shortcut="Ctrl+Alt+E"/>
+    <action name="Vertex Tool (Current Layer)" shortcut="Ctrl+T"/>
+    <action name="Properties…" shortcut="Ctrl+Shift+P"/>
+    <action name="Stream Digitizing" shortcut="R"/>
+    <action name="Toggle Panel Visibility" shortcut="Ctrl+Tab"/>
+    <action name="Data Source Manager" shortcut="Ctrl+L"/>
+    <action name="Set CRS of Layer(s)" shortcut="Ctrl+Shift+C"/>
+    <action name="Add Oracle Spatial Layer…" shortcut="Ctrl+Shift+O"/>
+    <action name="Open Attribute Table (Selected Features)" shortcut="Shift+F1"/>
+    <action name="Add Feature" shortcut="Ctrl+."/>
+    <action name="Zoom Out" shortcut="Ctrl+Alt+-"/>
+    <action name="Clear selections" shortcut="Ctrl+Alt+Shift+A"/>
+    <action name="Identify Features" shortcut="Ctrl+Shift+F"/>
+    <action name="Graphical Modeler…" shortcut="Ctrl+Alt+G"/>
+    <action name="Elevation Profile" shortcut="Ctrl+Alt+F"/>
+    <action name="Remove Layer/Group" shortcut="Ctrl+D"/>
+    <action name="Toggle Editing" shortcut="Ctrl+E"/>
+    <action name="History…" shortcut="Ctrl+H"/>
+    <action name="Measure Line" shortcut="Ctrl+Shift+M"/>
+    <action name="New Spatial Bookmark…" shortcut="Ctrl+B"/>
+    <action name="Split Features" shortcut="Ctrl+G"/>
+    <action name="Select Features by Value…" shortcut="F3"/>
+    <action name="Add Vector Layer…" shortcut="Ctrl+Shift+V"/>
+    <action name="Toggle Snapping" shortcut="S"/>
+    <action name="New Map View" shortcut="Ctrl+M"/>
+    <action name="Zoom In" shortcut="Ctrl+Alt++"/>
+    <action name="Toggle Full Screen Mode" shortcut="F11"/>
+    <action name="Add Raster Layer…" shortcut="Ctrl+Shift+R"/>
+    <action name="Save" shortcut="Ctrl+S"/>
+    <action name="Open…" shortcut="Ctrl+O"/>
+    <action name="Digitize with Curve" shortcut="Ctrl+Shift+G"/>
+    <action name="New" shortcut="Ctrl+N"/>
+    <action name="Export Map to Image…" shortcut="Ctrl+Shift+G"/>
+    <action name="Show All Layers" shortcut="Ctrl+Shift+U"/>
+    <action name="Hide All Layers" shortcut="Ctrl+Shift+H"/>
+    <action name="Add SpatiaLite Layer…" shortcut="Ctrl+Shift+L"/>
+    <action name="Python Console" shortcut="Ctrl+Alt+P"/>
+    <action name="Show Undo/Redo Panel" shortcut="Ctrl+5"/>
+    <action name="Show Bookmarks Panel" shortcut="Ctrl+4"/>
+    <action name="Show Overview Panel" shortcut="Ctrl+8"/>
+    <action name="Trigger Locator" shortcut="Ctrl+Q"/>
+    <action name="Show GPS Information Panel" shortcut="Ctrl+0"/>
+    <action name="Show Layers Panel" shortcut="Ctrl+Alt+W"/>
+    <action name="Zoom in (secondary)" shortcut="Ctrl+Alt+="/>
+    <action name="Nudge profile tool curve to the left" shortcut="Ctrl+Alt+,"/>
+    <action name="Edit last feature in attribute table" shortcut="Ctrl+Alt+}"/>
+    <action name="Edit next feature in attribute table" shortcut="Ctrl+Alt+]"/>
+    <action name="Show Style Panel" shortcut="Ctrl+Alt+S"/>
+    <action name="Zoom out of canvas" shortcut="Ctrl+-"/>
+    <action name="Show Debugging/Development Tools" shortcut="F12"/>
+    <action name="Show Layer Order Panel" shortcut="Ctrl+9"/>
+    <action name="Show Statistics Panel" shortcut="Ctrl+6"/>
+    <action name="Nudge profile tool curve to the right" shortcut="Ctrl+Alt+."/>
+    <action name="Zoom in to canvas" shortcut="Ctrl++"/>
+    <action name="Show Browser Panel" shortcut="Ctrl+Alt+A"/>
+    <action name="Zoom in to canvas (secondary)" shortcut="Ctrl+="/>
+    <action name="Edit previous feature in attribute table" shortcut="Ctrl+Alt+["/>
+    <action name="Edit first feature in attribute table" shortcut="Ctrl+Alt+{"/>
+</qgsshortcuts>
