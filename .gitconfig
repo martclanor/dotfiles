@@ -5,3 +5,9 @@
 	defaultBranch = main
 [core]
 	editor = vim
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[difftool "vimdiff"]
+	cmd = vimdiff \"$LOCAL\" \"$REMOTE\"
