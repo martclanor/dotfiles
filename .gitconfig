@@ -11,3 +11,7 @@
 	prompt = false
 [difftool "vimdiff"]
 	cmd = vimdiff \"$LOCAL\" \"$REMOTE\"
+[format]
+	pretty = oneline
+[log]
+	abbrevcommit = yes
