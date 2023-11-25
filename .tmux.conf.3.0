@@ -1,0 +1,68 @@
+# Configuration for tmux (terminal multiplexer) v3.0
+
+# Set terminal type for proper color support
+set -g default-terminal "xterm-256color"
+
+# Lower escape timing from 500ms to 0ms for faster response to scroll-buffer access
+set -sg escape-time 0
+
+# Disabling visual or audible bell
+set-option -g bell-action none
+set-option -g visual-bell off
+
+# Set command history limit
+set-option -g history-limit 5000
+
+# Change the prefix key, C-a is easier to reach than the default C-b
+unbind-key C-b
+set-option -g prefix C-a
+bind-key C-a send-prefix
+
+# Start indexing windows and panes from 1 instead of 0
+set -g base-index 1
+setw -g pane-base-index 1
+
+# Use alt + arrow keys to switch between panes
+bind -n M-h select-pane -L
+bind -n M-l select-pane -R
+bind -n M-k select-pane -U
+bind -n M-j select-pane -D
+
+# Use ctrl + alt + arrow keys to switch between windows
+bind -n C-M-h previous-window
+bind -n C-M-l next-window
+
+# Use vi mode for command-line and status-line
+setw -g mode-keys vi
+set -g status-keys vi
+
+# Bind 'v' to split windows horizontally and 'h' to split windows vertically
+bind-key v split-window -h
+bind-key h split-window -v
+
+# Define resize pane binds
+bind -r C-j resize-pane -D 10
+bind -r C-k resize-pane -U 10
+bind -r C-h resize-pane -L 10
+bind -r C-l resize-pane -R 10
+
+# Set pane border styles
+set -g pane-border-style fg=brightblack,bg=black
+set -g pane-active-border-style fg=colour0,bg=colour255
+
+# Set status bar styles
+set -g status-style bg=colour234,fg=colour137,dim
+set -g status-left ''
+set -g status-right '#[fg=colour233,bg=colour241,bold] %y-%m-%d #[fg=colour233,bg=colour245,bold] %H:%M:%S '
+
+# Set window status styles
+setw -g window-status-current-style fg=colour81,bold
+setw -g window-status-style fg=colour138,bg=colour235
+setw -g window-status-bell-style fg=colour255,bg=colour1,bold
+setw -g window-status-current-format ' #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour50]#F '
+
+# Set message styles
+set -g message-style fg=colour232,bg=colour166,bold
+
+# Bind 'r' to easily reload tmux configuration
+bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf RELOADED."
