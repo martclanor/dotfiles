@@ -66,3 +66,6 @@ set -g message-style fg=colour232,bg=colour166,bold
 
 # Bind 'r' to easily reload tmux configuration
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf RELOADED."
+
+# For persistent tmux sessions
+run-shell ~/repos/tmux-resurrect/resurrect.tmux
