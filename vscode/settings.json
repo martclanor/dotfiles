@@ -37,7 +37,7 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+        "source.organizeImports": "explicit"
     }
   },
   "terminal.integrated.gpuAcceleration": "on",
@@ -50,7 +50,7 @@
   "workbench.list.smoothScrolling": true,
   "terminal.integrated.smoothScrolling": true,
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "notebook.output.textLineLimit": 100,
+  "notebook.output.textLineLimit": 50,
   "codesnap.realLineNumbers": true,
   "codesnap.showWindowControls": false,
   "codesnap.showWindowTitle": true,
@@ -182,7 +182,7 @@
   "editor.semanticHighlighting.enabled": false,
   "oneDarkPro.italic": false,
   "python.analysis.autoImportCompletions": true,
-"python.analysis.completeFunctionParens": true,
+  "python.analysis.completeFunctionParens": true,
   "editor.renderWhitespace": "none",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.minimap.renderCharacters": false,
@@ -210,8 +210,11 @@
   "editor.multiDocumentOccurrencesHighlight": true,
   "search.exclude": {
     "**/*.html": true
-},
-"oneDarkPro.vivid": false,
+  },
+  "oneDarkPro.vivid": false,
 "window.zoomLevel": 0.5227586988632231,
-"workbench.activityBar.location": "hidden"
+"debug.internalConsoleOptions": "neverOpen",
+"workbench.editor.tabActionCloseVisibility": false,
+"debug.hideLauncherWhileDebugging": true,
+"debug.console.closeOnEnd": true
 }

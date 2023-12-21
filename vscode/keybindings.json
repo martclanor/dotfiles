@@ -69,12 +69,7 @@
     "command": "-workbench.action.terminal.paste",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
-  {
-    "key": "capslock",
-    "command": "extension.vim_escape",
-    "when": "editorTextFocus && vim.active && !inDebugRepl"
-  },
-  {
+{
     "key": "escape",
     "command": "-extension.vim_escape",
     "when": "editorTextFocus && vim.active && !inDebugRepl"
@@ -603,7 +598,7 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "f1",
+    "key": "alt+c",
     "command": "workbench.action.debug.continue",
     "when": "debugState == 'stopped'"
   },
@@ -623,7 +618,7 @@
     "when": "variablesFocused"
   },
   {
-    "key": "f2",
+    "key": "alt+n",
     "command": "workbench.action.debug.stepOver",
     "when": "debugState == 'stopped'"
   },
@@ -633,7 +628,7 @@
     "when": "debugState == 'stopped'"
   },
   {
-    "key": "f3",
+    "key": "alt+s",
     "command": "workbench.action.debug.stepInto",
     "when": "debugState != 'inactive'"
   },
@@ -643,7 +638,7 @@
     "when": "debugState != 'inactive'"
   },
   {
-    "key": "f4",
+    "key": "alt+o",
     "command": "workbench.action.debug.stepOut",
     "when": "debugState == 'stopped'"
   },
@@ -957,12 +952,7 @@
     "command": "-closeDirtyDiff",
     "when": "dirtyDiffVisible"
   },
-  {
-    "key": "alt+c",
-    "command": "editor.action.dirtydiff.next",
-    "when": "editorTextFocus && !textCompareEditorActive"
-  },
-  {
+{
     "key": "alt+f3",
     "command": "-editor.action.dirtydiff.next",
     "when": "editorTextFocus && !textCompareEditorActive"
@@ -1358,7 +1348,7 @@
     "command": "workbench.debug.action.focusWatchView"
   },
   {
-    "key": "ctrl+shift+d d",
+    "key": "alt+e",
     "command": "workbench.panel.repl.view.focus"
   },
   {
@@ -1797,5 +1787,77 @@
 {
     "key": "ctrl+shift+q",
     "command": "workbench.panel.chat.view.copilot.focus"
+},
+{
+    "key": "alt+\\",
+    "command": "-editor.action.inlineSuggest.trigger",
+    "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+},
+{
+    "key": "alt+c",
+    "command": "-markdown.extension.checkTaskList",
+    "when": "editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+},
+{
+    "key": "ctrl+shift+alt+d",
+    "command": "jupyter.debugcurrentcell.palette"
+},
+{
+    "key": "alt+w",
+    "command": "workbench.debug.viewlet.action.addWatchExpression",
+    "when": "view.workbench.debug.watchExpressionsView.visible"
+},
+{
+    "key": "ctrl+f11",
+    "command": "-workbench.action.debug.stepIntoTarget",
+    "when": "inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'"
+},
+{
+    "key": "alt+r",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode && debugState == 'stopped'"
+},
+{
+    "key": "ctrl+shift+f5",
+    "command": "-workbench.action.debug.restart",
+    "when": "inDebugMode"
+},
+{
+    "key": "alt+d",
+    "command": "workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+},
+{
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+},
+{
+    "key": "alt+q",
+    "command": "workbench.action.debug.stop",
+    "when": "inDebugMode && !focusedSessionIsAttach"
+},
+{
+    "key": "shift+f5",
+    "command": "-workbench.action.debug.stop",
+    "when": "inDebugMode && !focusedSessionIsAttach"
+},
+{
+    "key": "ctrl+alt+w",
+    "command": "editor.debug.action.selectionToWatch"
+},
+{
+    "key": "ctrl+alt+`",
+    "command": "editor.debug.action.conditionalBreakpoint"
+},
+{
+    "key": "x",
+    "command": "debug.removeBreakpoint",
+    "when": "breakpointsFocused && !breakpointInputFocused"
+},
+{
+    "key": "delete",
+    "command": "-debug.removeBreakpoint",
+    "when": "breakpointsFocused && !breakpointInputFocused"
 }
 ]
