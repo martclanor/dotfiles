@@ -16,3 +16,5 @@
 	pretty = oneline
 [log]
 	abbrevcommit = yes
+[pull]
+	ff = only
