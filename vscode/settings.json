@@ -216,5 +216,6 @@
 "debug.internalConsoleOptions": "neverOpen",
 "workbench.editor.tabActionCloseVisibility": false,
 "debug.hideLauncherWhileDebugging": true,
-"debug.console.closeOnEnd": true
+"debug.console.closeOnEnd": true,
+"remote.autoForwardPortsSource": "hybrid"
 }
