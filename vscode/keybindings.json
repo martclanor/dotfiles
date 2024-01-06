@@ -331,16 +331,6 @@
     "command": "-workbench.action.closeActiveEditor"
   },
   {
-    "key": "ctrl+c",
-    "command": "-vscode-neovim.escape",
-    "when": "editorTextFocus && neovim.ctrlKeysNormal && neovim.init && !dirtyDiffVisible && !findWidgetVisible && !inReferenceSearchEditor && !markersNavigationVisible && !notebookCellFocused && !notificationCenterVisible && !parameterHintsVisible && !referenceSearchVisible && neovim.mode == 'normal'"
-  },
-  {
-    "key": "ctrl+c",
-    "command": "-vscode-neovim.escape",
-    "when": "editorTextFocus && neovim.ctrlKeysInsert && neovim.init && neovim.mode != 'normal'"
-  },
-  {
     "key": "ctrl+k ctrl+k",
     "command": "-editor.action.defineKeybinding",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'jsonc'"
@@ -1859,5 +1849,11 @@
     "key": "delete",
     "command": "-debug.removeBreakpoint",
     "when": "breakpointsFocused && !breakpointInputFocused"
+},
+{
+    "key": "ctrl+c",
+    "command": "vscode-neovim.send",
+    "when": "editorTextFocus && neovim.mode != insert",
+    "args": "<C-c>",
 }
 ]

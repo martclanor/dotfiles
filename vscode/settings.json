@@ -54,7 +54,7 @@
   "codesnap.realLineNumbers": true,
   "codesnap.showWindowControls": false,
   "codesnap.showWindowTitle": true,
-  "vscode-neovim.neovimInitVimPaths.win32": "D:\\Users\\clam6\\init.vim",
+  "vscode-neovim.neovimInitVimPaths.win32": "D:\\Users\\clam6\\repos\\dotfiles\\vscode\\vscode_neovim.vim",
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#ffffff"
   },
