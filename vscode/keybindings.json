@@ -428,22 +428,12 @@
     "command": "-workbench.action.terminal.scrollDown",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
   },
-  {
-    "key": "ctrl+d",
-    "command": "workbench.action.terminal.scrollDownPage",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
-  },
-  {
+{
     "key": "shift+pagedown",
     "command": "-workbench.action.terminal.scrollDownPage",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
   },
-  {
-    "key": "ctrl+u",
-    "command": "workbench.action.terminal.scrollUpPage",
-    "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
-  },
-  {
+{
     "key": "shift+pageup",
     "command": "-workbench.action.terminal.scrollUpPage",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocus && terminalProcessSupported && !terminalAltBufferActive"
@@ -909,23 +899,27 @@
   },
   {
     "key": "ctrl+alt+,",
-    "command": "workbench.action.terminal.resizePaneLeft"
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+alt+.",
-    "command": "workbench.action.terminal.resizePaneRight"
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+shift+=",
     "command": "workbench.action.evenEditorWidths"
   },
   {
-    "key": "ctrl+shift+,",
-    "command": "workbench.action.decreaseViewWidth"
+    "key": "ctrl+alt+,",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+shift+.",
-    "command": "workbench.action.increaseViewWidth"
+    "key": "ctrl+alt+.",
+    "command": "workbench.action.increaseViewWidth",
+    "when": "!terminalFocus"
   },
   {
     "key": "ctrl+alt+\\",
@@ -1275,8 +1269,9 @@
     "when": "workbench.panel.markers.view.active"
   },
   {
-    "key": "ctrl+shift+n",
-    "command": "workbench.action.toggleMaximizedPanel"
+    "key": "ctrl+shift+m",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+shift+n",
@@ -1326,8 +1321,9 @@
     "command": "workbench.debug.action.focusBreakpointsView"
   },
   {
-    "key": "ctrl+shift+d c",
-    "command": "workbench.debug.action.focusCallStackView"
+    "key": "alt+f",
+    "command": "workbench.debug.action.focusCallStackView",
+    "when": "debugState == 'stopped'"
   },
   {
     "key": "ctrl+shift+d v",
@@ -1713,7 +1709,7 @@
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
   {
-    "key": "ctrl+alt+n",
+    "key": "ctrl+\\",
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
   },
@@ -1727,12 +1723,7 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
   },
-  {
-    "key": "delete",
-    "command": "workbench.action.terminal.killActiveTab",
-    "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
-  },
-  {
+{
     "key": "delete",
     "command": "-workbench.action.terminal.killActiveTab",
     "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
@@ -1757,7 +1748,7 @@
   {
     "key": "ctrl+shift+m",
     "command": "workbench.action.toggleMaximizeEditorGroup",
-    "when": "maximizedEditorGroup || multipleEditorGroups"
+    "when": "maximizedEditorGroup || multipleEditorGroups && !terminalFocus"
   },
   {
     "key": "ctrl+k ctrl+m",
@@ -1803,7 +1794,7 @@
     "when": "inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'"
 },
 {
-    "key": "alt+r",
+    "key": "ctrl+alt+r",
     "command": "workbench.action.debug.restart",
     "when": "inDebugMode && debugState == 'stopped'"
 },
@@ -1855,5 +1846,38 @@
     "command": "vscode-neovim.send",
     "when": "editorTextFocus && neovim.mode != insert",
     "args": "<C-c>",
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "git.openChange"
+},
+{
+    "key": "ctrl+\\",
+    "command": "workbench.action.splitEditor",
+    "when": "!terminalFocus"
+},
+{
+    "key": "ctrl+\\",
+    "command": "-workbench.action.splitEditor"
+},
+{
+    "key": "ctrl+d",
+    "command": "workbench.action.terminal.scrollDownPage",
+    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+},
+{
+    "key": "shift+pagedown",
+    "command": "-workbench.action.terminal.scrollDownPage",
+    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+},
+{
+    "key": "ctrl+u",
+    "command": "workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+},
+{
+    "key": "shift+pageup",
+    "command": "-workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
 }
 ]

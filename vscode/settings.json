@@ -174,8 +174,7 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "notebook.compactView": false,
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "interactiveWindow.collapseCellInputCode": "never",
+"workbench.colorTheme": "One Dark Pro Darker",
   "oneDarkPro.editorTheme": "One Dark Pro Darker",
   "oneDarkPro.markdownStyle": false,
   "python.languageServer": "Pylance",
@@ -190,10 +189,7 @@
   "files.exclude": {
     "**/__pycache__": true,
     "tags": true
-  },
-  "files.readonlyInclude": {
-    ".venv/**": true
-  },
+},
   "vscode-neovim.statusLineSeparator": "    |    ",
   "workbench.editor.decorations.colors": false,
   "editor.scrollbar.vertical": "visible",
@@ -211,11 +207,11 @@
   "search.exclude": {
     "**/*.html": true
   },
-  "oneDarkPro.vivid": false,
-"window.zoomLevel": 0.5227586988632231,
+"oneDarkPro.vivid": false,
 "debug.internalConsoleOptions": "neverOpen",
 "workbench.editor.tabActionCloseVisibility": false,
 "debug.hideLauncherWhileDebugging": true,
 "debug.console.closeOnEnd": true,
-"remote.autoForwardPortsSource": "hybrid"
+"window.zoomLevel": 0.5227586988632231,
+"interactiveWindow.collapseCellInputCode": "never",
 }
