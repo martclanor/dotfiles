@@ -1,1 +1,1 @@
-Collection of dotfiles/config files for tracking evolution, easier transfer across machines, back-up and sharing.
+This repository contains a collection of dotfiles and configuration files which are curated to facilitate seamless tracking of changes, reliable backup, simplified transfer between machines, and effortless sharing.
