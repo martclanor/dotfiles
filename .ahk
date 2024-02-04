@@ -1,111 +1,27 @@
-; AutoHotkey v1 key mappings
+#Requires AutoHotkey v2.0
+
+; AutoHotkey v2 key mappings
 
 ; right windows key to Shift F10 or RMB
-RWin::+F10
+RWin::Send("+{F10}")
 
 ; right shift to backspace
-RShift::Backspace
+*RShift::Send("{Backspace}")
 
-g_LastCtrlKeyDownTime := 0
-g_AbortSendEsc := false
-g_ControlRepeatDetected := false
-
+; capslock to ctrl or esc
 *CapsLock::
-    if (g_ControlRepeatDetected)
-    {
-        return
-    }
+{
+    Send "{LControl down}"
+}
 
-    send,{Ctrl down}
-    g_LastCtrlKeyDownTime := A_TickCount
-    g_AbortSendEsc := false
-    g_ControlRepeatDetected := true
+*CapsLock up::
+{
+    Send "{LControl Up}"
 
-    return
-
-*CapsLock Up::
-    send,{Ctrl up}
-    g_ControlRepeatDetected := false
-    if (g_AbortSendEsc)
-    {
-        return
-    }
-    current_time := A_TickCount
-    time_elapsed := current_time - g_LastCtrlKeyDownTime
-    if (time_elapsed <= 250)
-    {
-        SendInput {Esc}
-    }
-    return
-
-~*^a::
-~*^b::
-~*^c::
-~*^d::
-~*^e::
-~*^f::
-~*^g::
-~*^h::
-~*^i::
-~*^j::
-~*^k::
-~*^l::
-~*^m::
-~*^n::
-~*^o::
-~*^p::
-~*^q::
-~*^r::
-~*^s::
-~*^t::
-~*^u::
-~*^v::
-~*^w::
-~*^x::
-~*^y::
-~*^z::
-~*^1::
-~*^2::
-~*^3::
-~*^4::
-~*^5::
-~*^6::
-~*^7::
-~*^8::
-~*^9::
-~*^0::
-~*^Space::
-~*^Backspace::
-~*^Delete::
-~*^Insert::
-~*^Home::
-~*^End::
-~*^PgUp::
-~*^PgDn::
-~*^Tab::
-~*^Return::
-~*^,::
-~*^.::
-~*^/::
-~*^;::
-~*^'::
-~*^[::
-~*^]::
-~*^\::
-~*^-::
-~*^=::
-~*^`::
-~*^F1::
-~*^F2::
-~*^F3::
-~*^F4::
-~*^F5::
-~*^F6::
-~*^F7::
-~*^F8::
-~*^F9::
-~*^F10::
-~*^F11::
-~*^F12::
-    g_AbortSendEsc := true
-    return
+    if (A_PriorKey=="CapsLock"){
+	if (A_TimeSincePriorHotkey < 1000)
+		Suspend "1"
+		Send "{Esc}"
+		Suspend "0"
+	}
+}
