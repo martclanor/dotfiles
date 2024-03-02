@@ -1756,11 +1756,6 @@
     "when": "maximizedEditorGroup || multipleEditorGroups"
 },
 {
-    "key": "ctrl+shift+enter",
-    "command": "github.copilot.generate",
-    "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
-},
-{
     "key": "ctrl+enter",
     "command": "-github.copilot.generate",
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
@@ -1861,18 +1856,8 @@
     "command": "-workbench.action.splitEditor"
 },
 {
-    "key": "ctrl+d",
-    "command": "workbench.action.terminal.scrollDownPage",
-    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
-},
-{
     "key": "shift+pagedown",
     "command": "-workbench.action.terminal.scrollDownPage",
-    "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
-},
-{
-    "key": "ctrl+u",
-    "command": "workbench.action.terminal.scrollUpPage",
     "when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
 },
 {

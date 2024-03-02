@@ -37,7 +37,7 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit"
     }
   },
   "terminal.integrated.gpuAcceleration": "on",
@@ -106,7 +106,7 @@
   "editor.parameterHints.enabled": false,
   "editor.roundedSelection": false,
   "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.verticalScrollbarSize": 10,
+  "editor.scrollbar.verticalScrollbarSize": 15,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -160,7 +160,6 @@
   "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
   "black-formatter.showNotifications": "always",
   "workbench.layoutControl.enabled": false,
-  "window.commandCenter": false,
   "zoombar.zoomUnit": 5,
   "workbench.editor.empty.hint": "hidden",
   "extensions.experimental.affinity": {
@@ -174,7 +173,7 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
   "workbench.iconTheme": "material-icon-theme",
   "notebook.compactView": false,
-"workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "oneDarkPro.editorTheme": "One Dark Pro Darker",
   "oneDarkPro.markdownStyle": false,
   "python.languageServer": "Pylance",
@@ -189,7 +188,7 @@
   "files.exclude": {
     "**/__pycache__": true,
     "tags": true
-},
+  },
   "vscode-neovim.statusLineSeparator": "    |    ",
   "workbench.editor.decorations.colors": false,
   "editor.scrollbar.vertical": "visible",
@@ -207,11 +206,19 @@
   "search.exclude": {
     "**/*.html": true
   },
-"oneDarkPro.vivid": false,
-"debug.internalConsoleOptions": "neverOpen",
-"workbench.editor.tabActionCloseVisibility": false,
-"debug.hideLauncherWhileDebugging": true,
-"debug.console.closeOnEnd": true,
-"window.zoomLevel": 0.5227586988632231,
-"interactiveWindow.collapseCellInputCode": "never",
+  "oneDarkPro.vivid": false,
+  "debug.internalConsoleOptions": "neverOpen",
+  "workbench.editor.tabActionCloseVisibility": false,
+  "debug.hideLauncherWhileDebugging": true,
+  "debug.console.closeOnEnd": true,
+  "window.zoomLevel": 0.5227586988632231,
+  "interactiveWindow.collapseCellInputCode": "never",
+  "window.commandCenter": false,
+  "terminal.integrated.shellIntegration.enabled": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "github.copilot.enable": {
+    "markdown": "true"
+  },
+  "editor.stickyScroll.enabled": false
 }
