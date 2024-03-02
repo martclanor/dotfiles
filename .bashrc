@@ -37,3 +37,5 @@ slog() {
     tail -f "slurm_log/$1"
 }
 
+# Prevent ctrl+d from exiting shell
+set -o ignoreeof
