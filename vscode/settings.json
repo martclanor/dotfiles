@@ -35,7 +35,7 @@
   "notebook.lineNumbers": "on",
   "autoDocstring.docstringFormat": "numpy",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     }
@@ -59,7 +59,6 @@
     "tab.activeBorder": "#ffffff"
   },
   "editor.rulers": [88],
-  "editor.defaultFormatter": "ms-python.black-formatter",
   "workbench.sideBar.location": "right",
   "files.refactoring.autoSave": false,
   "editor.semanticTokenColorCustomizations": {},
@@ -176,7 +175,6 @@
   "workbench.colorTheme": "One Dark Pro Darker",
   "oneDarkPro.editorTheme": "One Dark Pro Darker",
   "oneDarkPro.markdownStyle": false,
-  "python.languageServer": "Pylance",
   "editor.semanticHighlighting.enabled": false,
   "oneDarkPro.italic": false,
   "python.analysis.autoImportCompletions": true,
@@ -220,5 +218,8 @@
   "github.copilot.enable": {
     "markdown": "true"
   },
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "python.languageServer": "Pylance",
+  "python.analysis.addImport.heuristics": true,
+"ruff.showNotifications": "always"
 }
