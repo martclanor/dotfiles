@@ -1,6 +1,7 @@
 [user]
 	name = Mart Clanor
 	email = mart.dayniel.clanor@witteveenbos.com
+	signingkey = 4883170A764B8D90
 [init]
 	defaultBranch = main
 [core]
@@ -20,3 +21,7 @@
 	ff = only
 [rerere]
 	enabled = true
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
