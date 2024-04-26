@@ -27,3 +27,5 @@
 	gpgSign = true
 [rebase]
 	updateRefs = true
+[merge]
+	conflictstyle = zdiff3
