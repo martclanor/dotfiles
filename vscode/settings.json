@@ -221,5 +221,8 @@
   "editor.stickyScroll.enabled": false,
   "python.languageServer": "Pylance",
   "python.analysis.addImport.heuristics": true,
-"ruff.showNotifications": "always"
+"ruff.showNotifications": "always",
+"terminal.integrated.experimentalInlineChat": true,
+"editor.experimentalInlineEdit.enabled": true,
+"editor.experimentalInlineEdit.backgroundColoring": true
 }

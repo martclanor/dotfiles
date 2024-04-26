@@ -1761,7 +1761,7 @@
     "when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
 },
 {
-    "key": "ctrl+shift+q",
+    "key": "shift+alt+q",
     "command": "workbench.panel.chat.view.copilot.focus"
 },
 {
@@ -1874,5 +1874,70 @@
     "key": "ctrl+f",
     "command": "-workbench.action.terminal.focusFind",
     "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocusInAny && terminalHasBeenCreated || terminalFocusInAny && terminalProcessSupported"
+},
+{
+    "key": "ctrl+shift+q",
+    "command": "inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+},
+{
+    "key": "ctrl+i",
+    "command": "-inlineChat.start",
+    "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
+},
+{
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.terminal.chat.start",
+    "when": "config.terminal.integrated.experimentalInlineChat && inlineChatHasProvider && terminalFocusInAny && terminalHasBeenCreated || config.terminal.integrated.experimentalInlineChat && inlineChatHasProvider && terminalFocusInAny && terminalProcessSupported"
+},
+{
+    "key": "ctrl+i",
+    "command": "-workbench.action.terminal.chat.start",
+    "when": "config.terminal.integrated.experimentalInlineChat && inlineChatHasProvider && terminalFocusInAny && terminalHasBeenCreated || config.terminal.integrated.experimentalInlineChat && inlineChatHasProvider && terminalFocusInAny && terminalProcessSupported"
+},
+{
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.chat.startVoiceChat",
+    "when": "hasChatProvider && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress || hasChatProvider && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress"
+},
+{
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.startVoiceChat",
+    "when": "hasChatProvider && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress || hasChatProvider && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !inlineChatHasActiveRequest && !inlineVoiceChatInProgress && !notebookEditorFocused && !quickVoiceChatInProgress && !terminalChatActiveRequest && !terminalVoiceChatInProgress && !voiceChatGettingReady && !voiceChatInEditorInProgress && !voiceChatInViewInProgress"
+},
+{
+    "key": "ctrl+shift+i",
+    "command": "-dendron.createDailyJournalNote",
+    "when": "dendron:pluginActive && shellExecutionSupported"
+},
+{
+    "key": "ctrl+shift+i",
+    "command": "-workbench.action.toggleDevTools",
+    "when": "isDevelopment"
+},
+{
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.chat.stopListeningAndSubmit",
+    "when": "hasChatProvider && hasSpeechProvider && inChatInput && voiceChatInProgress || hasChatProvider && hasSpeechProvider && inlineChatFocused && voiceChatInProgress"
+},
+{
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.stopListeningAndSubmit",
+    "when": "hasChatProvider && hasSpeechProvider && inChatInput && voiceChatInProgress || hasChatProvider && hasSpeechProvider && inlineChatFocused && voiceChatInProgress"
+},
+{
+    "key": "ctrl+alt+q",
+    "command": "workbench.action.quickchat.toggle",
+    "when": "hasChatProvider"
+},
+{
+    "key": "ctrl+shift+i",
+    "command": "-workbench.action.quickchat.toggle",
+    "when": "hasChatProvider"
 }
 ]
