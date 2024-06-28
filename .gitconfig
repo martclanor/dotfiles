@@ -19,6 +19,8 @@
 	abbrevcommit = yes
 [pull]
 	ff = only
+[push]
+	autoSetupRemote = true
 [rerere]
 	enabled = true
 [commit]
