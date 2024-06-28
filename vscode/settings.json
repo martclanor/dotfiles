@@ -221,8 +221,11 @@
   "editor.stickyScroll.enabled": false,
   "python.languageServer": "Pylance",
   "python.analysis.addImport.heuristics": true,
-"ruff.showNotifications": "always",
-"terminal.integrated.experimentalInlineChat": true,
-"editor.experimentalInlineEdit.enabled": true,
-"editor.experimentalInlineEdit.backgroundColoring": true
+  "ruff.showNotifications": "always",
+  "terminal.integrated.experimentalInlineChat": true,
+  "editor.experimentalInlineEdit.enabled": true,
+  "editor.experimentalInlineEdit.backgroundColoring": true,
+"github.copilot.editor.enableAutoCompletions": true,
+"interactiveWindow.executeWithShiftEnter": true,
+"ruff.nativeServer": true
 }

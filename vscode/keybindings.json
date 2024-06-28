@@ -1939,5 +1939,23 @@
     "key": "ctrl+shift+i",
     "command": "-workbench.action.quickchat.toggle",
     "when": "hasChatProvider"
+},
+{
+    "key": "ctrl+q",
+    "command": "-workbench.action.quickOpenView"
+},
+{
+    "key": "ctrl+q",
+    "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+    "when": "inQuickOpen && inViewsPicker"
+},
+{
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+},
+{
+    "key": "ctrl+shift+alt+q",
+    "command": "workbench.action.chat.openInEditor"
 }
 ]
