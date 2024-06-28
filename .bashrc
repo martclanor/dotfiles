@@ -15,6 +15,9 @@ if [ -f ~/.bash_prompt ]; then
     . ~/.bash_prompt
 fi
 
+# Set vim as default editor
+export EDITOR=vim
+
 # Silence bell
 set bell-style none
 
