@@ -47,3 +47,6 @@ let mapleader = ","
 
 " For finding files
 set wildmenu
+
+" Netrw settings
+let g:netrw_winsize = 30
