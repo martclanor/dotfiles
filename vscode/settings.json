@@ -211,14 +211,12 @@
   "debug.console.closeOnEnd": true,
   "window.zoomLevel": 0.5227586988632231,
   "interactiveWindow.collapseCellInputCode": "never",
-  "window.commandCenter": false,
-  "terminal.integrated.shellIntegration.enabled": false,
+"window.commandCenter": false,
   "editor.stickyScroll.scrollWithEditor": false,
   "remote.autoForwardPortsSource": "hybrid",
   "github.copilot.enable": {
     "markdown": "true"
-  },
-  "editor.stickyScroll.enabled": false,
+},
   "python.languageServer": "Pylance",
   "python.analysis.addImport.heuristics": true,
   "ruff.showNotifications": "always",
@@ -226,6 +224,15 @@
   "editor.experimentalInlineEdit.enabled": true,
   "editor.experimentalInlineEdit.backgroundColoring": true,
 "github.copilot.editor.enableAutoCompletions": true,
-"interactiveWindow.executeWithShiftEnter": true,
-"ruff.nativeServer": true
+"ruff.nativeServer": true,
+"terminal.integrated.shellIntegration.enabled": false,
+"dataWrangler.experiments.fastCsvParsing": true,
+"interactiveWindow.showExecutionHint": false,
+"ruff.organizeImports": false,
+"ruff.codeAction.fixViolation": {
+    "enable": false
+},
+"debugpy.debugJustMyCode": false,
+"jupyter.debugJustMyCode": false,
+"editor.stickyScroll.enabled": false
 }

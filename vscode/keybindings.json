@@ -580,7 +580,7 @@
   {
     "key": "alt+c",
     "command": "workbench.action.debug.continue",
-    "when": "debugState == 'stopped'"
+    "when": "inDebugMode && !focusedSessionIsAttach"
   },
   {
     "key": "f5",
@@ -600,7 +600,7 @@
   {
     "key": "alt+n",
     "command": "workbench.action.debug.stepOver",
-    "when": "debugState == 'stopped'"
+    "when": "inDebugMode && !focusedSessionIsAttach"
   },
   {
     "key": "f10",
@@ -610,7 +610,7 @@
   {
     "key": "alt+s",
     "command": "workbench.action.debug.stepInto",
-    "when": "debugState != 'inactive'"
+    "when": "debugState == 'stopped'"
   },
   {
     "key": "f11",
@@ -982,7 +982,7 @@
     "when": "fileMatchOrFolderMatchWithResourceFocus"
   },
   {
-    "key": "shift+alt+c",
+    "key": "ctrl+shift+alt+c",
     "command": "editor.action.dirtydiff.previous",
     "when": "editorTextFocus && !textCompareEditorActive"
   },
@@ -1099,12 +1099,13 @@
     "command": "jupyter.runFileInteractive"
   },
   {
-    "key": "alt+b",
+    "key": "ctrl+alt+b",
     "command": "gitlens.toggleLineBlame"
   },
   {
     "key": "ctrl+shift+alt+r",
-    "command": "jupyter.restartkernel"
+    "command": "jupyter.restartkernel",
+    "when": "activeEditor == 'workbench.editor.interactive'"
   },
   {
     "key": "ctrl+alt+\\",
@@ -1317,8 +1318,9 @@
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+shift+d b",
-    "command": "workbench.debug.action.focusBreakpointsView"
+    "key": "alt+b",
+    "command": "workbench.debug.action.focusBreakpointsView",
+    "when": "debugState == 'stopped'"
   },
   {
     "key": "alt+f",
@@ -1326,12 +1328,14 @@
     "when": "debugState == 'stopped'"
   },
   {
-    "key": "ctrl+shift+d v",
-    "command": "workbench.debug.action.focusVariablesView"
+    "key": "alt+v",
+    "command": "workbench.debug.action.focusVariablesView",
+    "when": "debugState == 'stopped'"
   },
   {
-    "key": "ctrl+shift+d w",
-    "command": "workbench.debug.action.focusWatchView"
+    "key": "alt+w",
+    "command": "workbench.debug.action.focusWatchView",
+    "when": "debugState == 'stopped'"
   },
   {
     "key": "alt+e",
@@ -1394,7 +1398,7 @@
     "when": "breakpointsFocused && !inputFocus"
   },
   {
-    "key": "ctrl+alt+t",
+    "key": "alt+t",
     "command": "workbench.view.extension.test"
   },
   {
@@ -1729,7 +1733,7 @@
     "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
   },
   {
-    "key": "ctrl+alt+b",
+    "key": "ctrl+shift+alt+b",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
   {
@@ -1779,7 +1783,7 @@
     "command": "jupyter.debugcurrentcell.palette"
 },
 {
-    "key": "alt+w",
+    "key": "ctrl+alt+w",
     "command": "workbench.debug.viewlet.action.addWatchExpression",
     "when": "view.workbench.debug.watchExpressionsView.visible"
 },
@@ -1789,9 +1793,9 @@
     "when": "inDebugMode && stepIntoTargetsSupported && debugState == 'stopped'"
 },
 {
-    "key": "ctrl+alt+r",
+    "key": "ctrl+shift+alt+r",
     "command": "workbench.action.debug.restart",
-    "when": "inDebugMode && debugState == 'stopped'"
+    "when": "debugState == 'stopped' && activeEditor != 'workbench.editor.interactive'"
 },
 {
     "key": "ctrl+shift+f5",
@@ -1819,7 +1823,7 @@
     "when": "inDebugMode && !focusedSessionIsAttach"
 },
 {
-    "key": "ctrl+alt+w",
+    "key": "shift+alt+w",
     "command": "editor.debug.action.selectionToWatch"
 },
 {
@@ -1841,10 +1845,6 @@
     "command": "vscode-neovim.send",
     "when": "editorTextFocus && neovim.mode != insert",
     "args": "<C-c>",
-},
-{
-    "key": "ctrl+alt+c",
-    "command": "git.openChange"
 },
 {
     "key": "ctrl+\\",
@@ -1957,5 +1957,114 @@
 {
     "key": "ctrl+shift+alt+q",
     "command": "workbench.action.chat.openInEditor"
+},
+{
+    "key": "ctrl+shift+r",
+    "command": "-workbench.action.quickOpenNavigatePreviousInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+},
+{
+    "key": "ctrl+shift+r",
+    "command": "-rerunSearchEditorSearch",
+    "when": "inSearchEditor"
+},
+{
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+},
+{
+    "key": "ctrl+shift+r",
+    "command": "workbench.view.extension.references-view"
+},
+{
+    "key": "ctrl+alt+h",
+    "command": "references-view.showCallHierarchy",
+    "when": "editorHasCallHierarchyProvider"
+},
+{
+    "key": "shift+alt+h",
+    "command": "-references-view.showCallHierarchy",
+    "when": "editorHasCallHierarchyProvider"
+},
+{
+    "key": "ctrl+alt+r",
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+},
+{
+    "key": "shift+alt+f12",
+    "command": "-references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+},
+{
+    "key": "shift+alt+h",
+    "command": "-editor.showIncomingCalls",
+    "when": "callHierarchyVisible && callHierarchyDirection == 'outgoingCalls'"
+},
+{
+    "key": "ctrl+shift+d",
+    "command": "workbench.view.debug"
+},
+{
+    "key": "alt+f5",
+    "command": "-workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+},
+{
+    "key": "shift+alt+c",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+},
+{
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !textCompareEditorActive"
+},
+{
+    "key": "ctrl+alt+c",
+    "command": "editor.action.dirtydiff.next"
+},
+{
+    "key": "alt+c",
+    "command": "workbench.action.editor.nextChange",
+    "when": "textCompareEditorVisible"
+},
+{
+    "key": "alt+k",
+    "command": "workbench.action.debug.callStackUp",
+    "when": "inDebugMode && !focusedSessionIsAttach"
+},
+{
+    "key": "alt+j",
+    "command": "workbench.action.debug.callStackDown",
+    "when": "inDebugMode && !focusedSessionIsAttach"
+},
+{
+    "key": "alt+b",
+    "command": "-gitlens.toggleFileBlame",
+    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && resource in 'gitlens:tabs:blameable'"
+},
+{
+    "key": "ctrl+alt+o",
+    "command": "-workbench.action.remote.showMenu"
+},
+{
+    "key": "ctrl+alt+o",
+    "command": "workbench.action.showAllSymbols"
+},
+{
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+},
+{
+    "key": "x",
+    "command": "debug.removeWatchExpression",
+    "when": "watchExpressionsFocused && !expressionSelected"
+},
+{
+    "key": "delete",
+    "command": "-debug.removeWatchExpression",
+    "when": "watchExpressionsFocused && !expressionSelected"
 }
 ]
