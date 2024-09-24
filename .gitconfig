@@ -29,5 +29,6 @@
 	gpgSign = true
 [rebase]
 	updateRefs = true
+	autoStash = true
 [merge]
 	conflictstyle = zdiff3
