@@ -47,8 +47,6 @@
     ],
     "git.ignoreLegacyWarning": true,
     "vscode-neovim.neovimExecutablePaths.win32": "D:\\Users\\clam6\\nvim-win64\\bin\\nvim.exe",
-    "todomd.sortProjectsView": "count",
-    "todomd.defaultFile": "d:\\Users\\clam6\\Documents\\temp\\todo_md.txt",
     "editor.detectIndentation": false,
     "workbench.list.smoothScrolling": true,
     "terminal.integrated.smoothScrolling": true,
@@ -117,7 +115,6 @@
     "workbench.editor.openPositioning": "last",
     "workbench.editor.limit.value": 20,
     "workbench.editor.revealIfOpen": true,
-    "workbench.editor.tabCloseButton": "off",
     "workbench.settings.openDefaultKeybindings": true,
     "zenMode.centerLayout": false,
     "explorer.decorations.badges": false,
@@ -134,7 +131,6 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorWidth": 10,
     "codesnap.roundedCorners": false,
-    "csv-preview.capitalizeHeaders": false,
     "gitlens.currentLine.enabled": false,
     "editor.colorDecorators": false,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -146,9 +142,6 @@
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.command": false,
     "gitlens.codeLens.recentChange.command": false,
-    "markdown.marp.enableHtml": true,
-    "markdown.marp.exportType": "html",
-    "markdown.marp.strictPathResolutionDuringExport": true,
     "peacock.affectTabActiveBorder": true,
     "jupyter.askForKernelRestart": false,
     "terminal.integrated.commandsToSkipShell": [
@@ -161,15 +154,8 @@
     "editor.formatOnSave": true,
     "editor.mouseWheelZoom": true,
     "notebook.confirmDeleteRunningCell": false,
-    "flake8.showNotifications": "always",
-    "flake8.args": [
-        "--ignore=E203,W503,W504",
-        "--max-line-length=88"
-    ],
     "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
-    "black-formatter.showNotifications": "always",
     "workbench.layoutControl.enabled": false,
-    "zoombar.zoomUnit": 5,
     "workbench.editor.empty.hint": "hidden",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
@@ -203,13 +189,11 @@
     "editor.mouseWheelScrollSensitivity": 2,
     "workbench.startupEditor": "none",
     "window.title": "${rootName}",
-    "cSpell.language": "en,nl,en-GB,nl-NL,en-US",
     "workbench.editor.highlightModifiedTabs": true,
     "window.density.editorTabHeight": "compact",
     "editor.stickyTabStops": true,
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.wrapTabs": true,
-    "editor.multiDocumentOccurrencesHighlight": true,
     "search.exclude": {
         "**/*.html": true
     },
@@ -224,14 +208,10 @@
     "editor.stickyScroll.scrollWithEditor": false,
     "remote.autoForwardPortsSource": "hybrid",
     "github.copilot.enable": {
-        "markdown": "true"
+        "markdown": true
     },
     "python.languageServer": "Pylance",
-    "python.analysis.addImport.heuristics": true,
     "ruff.showNotifications": "always",
-    "terminal.integrated.experimentalInlineChat": true,
-    "editor.experimentalInlineEdit.enabled": true,
-    "editor.experimentalInlineEdit.backgroundColoring": true,
     "github.copilot.editor.enableAutoCompletions": true,
     "terminal.integrated.shellIntegration.enabled": false,
     "dataWrangler.experiments.fastCsvParsing": true,
@@ -241,11 +221,6 @@
     "editor.stickyScroll.enabled": false,
     "workbench.iconTheme": "material-icon-theme",
     "notebook.outline.showCodeCells": true,
-    "cSpell.userWords": [
-        "gridgen",
-        "timeseries",
-        "timestep"
-    ],
     "ruff.lineLength": 88,
     "editor.defaultFormatter": "charliermarsh.ruff",
 }
