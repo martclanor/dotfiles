@@ -19,6 +19,8 @@
 	abbrevcommit = yes
 [pull]
 	ff = only
+[fetch]
+	prune = true
 [push]
 	autoSetupRemote = true
 [rerere]
