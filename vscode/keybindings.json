@@ -838,11 +838,6 @@
         "command": "dendron.renameNote"
     },
     {
-        "key": "ctrl+alt+q",
-        "command": "dendron.togglePreview",
-        "when": "dendron:pluginActive"
-    },
-    {
         "key": "ctrl+k v",
         "command": "-dendron.togglePreview",
         "when": "dendron:pluginActive"
@@ -1887,7 +1882,7 @@
     {
         "key": "ctrl+shift+q",
         "command": "workbench.action.terminal.chat.start",
-        "when": "config.terminal.integrated.experimentalInlineChat && inlineChatHasProvider && terminalFocusInAny && terminalHasBeenCreated || config.terminal.integrated.experimentalInlineChat && inlineChatHasProvider && terminalFocusInAny && terminalProcessSupported"
+        "when": "inlineChatHasProvider && terminalFocusInAny && terminalHasBeenCreated || config.terminal.integrated.experimentalInlineChat && inlineChatHasProvider && terminalFocusInAny && terminalProcessSupported"
     },
     {
         "key": "ctrl+i",
@@ -1923,11 +1918,6 @@
         "key": "ctrl+i",
         "command": "-workbench.action.chat.stopListeningAndSubmit",
         "when": "hasChatProvider && hasSpeechProvider && inChatInput && voiceChatInProgress || hasChatProvider && hasSpeechProvider && inlineChatFocused && voiceChatInProgress"
-    },
-    {
-        "key": "ctrl+alt+q",
-        "command": "workbench.action.quickchat.toggle",
-        "when": "hasChatProvider"
     },
     {
         "key": "ctrl+shift+i",
@@ -2146,5 +2136,20 @@
     {
         "key": "shift+alt+q",
         "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "win+i",
+        "command": "-inlineChat.startWithCurrentLine",
+        "when": "editorFocus && github.copilot.chat.editor.enableLineTrigger && inlineChatHasProvider && !editorReadonly && !inlineChatVisible"
+    },
+    {
+        "key": "ctrl+alt+q",
+        "command": "workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
     }
 ]

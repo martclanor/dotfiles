@@ -141,7 +141,6 @@
     "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
     "jupyter.notebookFileRoot": "${workspaceFolder}",
     "evenBetterToml.formatter.allowedBlankLines": 2,
-    "editor.formatOnSave": true,
     "editor.mouseWheelZoom": true,
     "notebook.confirmDeleteRunningCell": false,
     "workbench.layoutControl.enabled": false,
@@ -217,7 +216,6 @@
         "strings": "on"
     },
     "workbench.commandPalette.preserveInput": true,
-    "workbench.editor.decorations.colors": false,
     "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
     "workbench.editor.limit.value": 20,
     "workbench.editor.tabActionCloseVisibility": false,
@@ -244,4 +242,7 @@
     "python.terminal.shellIntegration.enabled": true,
     "debugpy.showPythonInlineValues": true,
     "pythonIndent.trimLinesWithOnlyWhitespace": true,
+    "gitlens.ai.experimental.model": "vscode",
+    "gitlens.ai.experimental.vscode.model": "copilot:gpt-4o",
+    "editor.formatOnSave": true,
 }
