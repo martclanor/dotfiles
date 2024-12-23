@@ -207,7 +207,6 @@
     "editor.roundedSelection": false,
     "editor.scrollbar.vertical": "visible",
     "editor.semanticHighlighting.enabled": false,
-    "editor.stickyScroll.enabled": false,
     "editor.cursorBlinking": "phase",
     "editor.formatOnSaveMode": "modificationsIfAvailable",
     "editor.minimap.enabled": false,
@@ -225,7 +224,6 @@
     "terminal.integrated.shellIntegration.enabled": false,
     "notebook.defaultFormatter": "charliermarsh.ruff",
     "notebook.multiCursor.enabled": true,
-    "chat.experimental.detectParticipant.enabled": true,
     "dataWrangler.experiments.autoDetectCsvDelimiter": true,
     "github.gitProtocol": "ssh",
     "git.enableCommitSigning": true,
@@ -245,4 +243,7 @@
     "gitlens.ai.experimental.model": "vscode",
     "gitlens.ai.experimental.vscode.model": "copilot:gpt-4o",
     "editor.formatOnSave": true,
+    "chat.detectParticipant.enabled": true,
+    "debug.inlineValues": "off",
+    "editor.stickyScroll.enabled": false,
 }
