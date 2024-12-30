@@ -20,6 +20,6 @@ set keymap vi-command
 
 # Show current vi mode (insert/command) in prompt
 set show-mode-in-prompt on
-set vi-ins-mode-string "+"  # Indicator for insert mode
-set vi-cmd-mode-string ":"  # Indicator for command mode
+set vi-ins-mode-string "\1\e[5 q+\2"  # Indicator for insert mode
+set vi-cmd-mode-string "\1\e[2 q:\2"  # Indicator for command mode
 set keyseq-timeout 0  # Remove delay when switching modes
