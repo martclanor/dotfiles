@@ -42,3 +42,5 @@ slog() {
 
 # Prevent ctrl+d from exiting shell
 set -o ignoreeof
+
+export PIP_REQUIRE_VIRTUALENV=true
