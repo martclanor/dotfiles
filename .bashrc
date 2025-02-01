@@ -44,3 +44,10 @@ slog() {
 set -o ignoreeof
 
 export PIP_REQUIRE_VIRTUALENV=true
+
+# For Windows (git bash)
+alias ls='ls --color=auto --ignore=desktop.ini --ignore=ntuser.* --ignore=NTUSER.DAT* --ignore="Application Data" --ignore=Cookies --ignore="Local Settings" --ignore="My Documents" --ignore=NetHood --ignore="OneDrive - Witteveen+Bos" --ignore=PrintHood --ignore=Recent --ignore=Searches --ignore=SendTo --ignore="Start Menu" --ignore=Templates'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias wslsd='wsl --shutdown'
