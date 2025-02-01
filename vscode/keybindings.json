@@ -2134,7 +2134,7 @@
         "when": "isCompositeNotebook && !LinkedEditingInputVisible && !accessibilityHelpWidgetVisible && !breakpointWidgetVisible && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible && !exceptionWidgetVisible && !findWidgetVisible && !inSnippetMode && !inlineChatVisible && !isComposing && !markersNavigationVisible && !notebookEditorFocused && !notificationToastsVisible && !parameterHintsVisible && !renameInputVisible && !selectionAnchorSet && !suggestWidgetVisible"
     },
     {
-        "key": "shift+alt+q",
+        "key": "ctrl+shift+v",
         "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
@@ -2151,5 +2151,29 @@
         "key": "ctrl+shift+i",
         "command": "-workbench.action.chat.openEditSession",
         "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+    },
+    {
+        "key": "ctrl+alt+/",
+        "command": "editor.action.inspectTMScopes"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.extension.closePreview",
+        "when": "activeWebviewPanelId == 'markdown.preview'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-excel.preview",
+        "when": "editorLangId == 'excel'"
+    },
+    {
+        "key": "ctrl+shift+v",
+        "command": "-csv.preview",
+        "when": "editorLangId == 'csv (pipe)'"
     }
 ]
