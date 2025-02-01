@@ -51,3 +51,6 @@ set wildmenu
 " Netrw settings
 let g:netrw_winsize = 30
 let g:netrw_browse_split = 2  " Open file in a vertical split
+
+" Set cursor to a block when Vim starts
+autocmd VimEnter * silent !echo -ne "\e[2 q"
