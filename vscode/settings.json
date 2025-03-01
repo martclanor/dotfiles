@@ -1,247 +1,245 @@
 {
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe (migrated)",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
     },
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
     },
-    "terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe (migrated)",
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        },
-        "C:\\Program Files\\Git\\bin\\bash.exe (migrated)": {
-            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-            "args": []
-        },
-        "Windows PowerShell": {
-            "path": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-        }
+    "Git Bash": {
+      "source": "Git Bash"
     },
-    "editor.cursorSmoothCaretAnimation": "on",
-    "notebook.lineNumbers": "on",
-    "autoDocstring.docstringFormat": "numpy",
-    "[python]": {
-        "editor.defaultFormatter": null,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "explicit"
-        }
+    "C:\\Program Files\\Git\\bin\\bash.exe (migrated)": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": []
     },
-    "terminal.integrated.gpuAcceleration": "on",
-    "isort.args": [
-        "--profile",
-        "black"
-    ],
-    "git.ignoreLegacyWarning": true,
-    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\clam6\\nvim\\bin\\nvim.exe",
-    "editor.detectIndentation": false,
-    "workbench.list.smoothScrolling": true,
-    "terminal.integrated.smoothScrolling": true,
-    "terminal.integrated.enableMultiLinePasteWarning": "never",
-    "notebook.output.textLineLimit": 50,
-    "codesnap.realLineNumbers": true,
-    "codesnap.showWindowControls": false,
-    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\clam6\\repos\\dotfiles\\vscode\\vscode_neovim.vim",
-    "workbench.colorCustomizations": {
-        "tab.activeBorder": "#ffffff"
+    "Windows PowerShell": {
+      "path": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+  "editor.cursorSmoothCaretAnimation": "on",
+  "notebook.lineNumbers": "on",
+  "autoDocstring.docstringFormat": "numpy",
+  "[python]": {
+    "editor.defaultFormatter": null,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "terminal.integrated.gpuAcceleration": "on",
+  "isort.args": ["--profile", "black"],
+  "git.ignoreLegacyWarning": true,
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\clam6\\nvim\\bin\\nvim.exe",
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "notebook.output.textLineLimit": 50,
+  "codesnap.realLineNumbers": true,
+  "codesnap.showWindowControls": false,
+  "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\clam6\\repos\\dotfiles\\vscode\\vscode_neovim.vim",
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#ffffff"
+  },
+  "editor.rulers": [88],
+  "workbench.sideBar.location": "right",
+  "files.refactoring.autoSave": false,
+  "editor.semanticTokenColorCustomizations": {},
+  "problems.decorations.enabled": false,
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
     },
-    "editor.rulers": [
-        88
-    ],
-    "workbench.sideBar.location": "right",
-    "files.refactoring.autoSave": false,
-    "editor.semanticTokenColorCustomizations": {},
-    "problems.decorations.enabled": false,
-    "peacock.favoriteColors": [
-        {
-            "name": "Angular Red",
-            "value": "#dd0531"
-        },
-        {
-            "name": "Azure Blue",
-            "value": "#007fff"
-        },
-        {
-            "name": "JavaScript Yellow",
-            "value": "#f9e64f"
-        },
-        {
-            "name": "Mandalorian Blue",
-            "value": "#1857a4"
-        },
-        {
-            "name": "Node Green",
-            "value": "#215732"
-        },
-        {
-            "name": "React Blue",
-            "value": "#61dafb"
-        },
-        {
-            "name": "Something Different",
-            "value": "#832561"
-        },
-        {
-            "name": "Svelte Orange",
-            "value": "#ff3d00"
-        },
-        {
-            "name": "Vue Green",
-            "value": "#42b883"
-        }
-    ],
-    "editor.scrollbar.horizontal": "hidden",
-    "editor.scrollbar.verticalScrollbarSize": 15,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "workbench.editor.revealIfOpen": true,
-    "zenMode.centerLayout": false,
-    "debug.confirmOnExit": "always",
-    "codesnap.shutterAction": "copy",
-    "scm.diffDecorationsGutterPattern": {
-        "added": true
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
     },
-    "search.showLineNumbers": true,
-    "zenMode.hideStatusBar": false,
-    "scm.alwaysShowRepositories": true,
-    "scm.defaultViewMode": "tree",
-    "terminal.integrated.copyOnSelection": true,
-    "codesnap.roundedCorners": false,
-    "gitlens.currentLine.enabled": false,
-    "editor.colorDecorators": false,
-    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-    "git.ignoreMissingGitWarning": true,
-    "jupyter.interactiveWindow.textEditor.executeSelection": true,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.command": false,
-    "gitlens.codeLens.recentChange.command": false,
-    "jupyter.askForKernelRestart": false,
-    "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen"
-    ],
-    "typescript.tsserver.web.projectWideIntellisense.enabled": false,
-    "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
-    "jupyter.notebookFileRoot": "${workspaceFolder}",
-    "evenBetterToml.formatter.allowedBlankLines": 2,
-    "editor.mouseWheelZoom": true,
-    "notebook.confirmDeleteRunningCell": false,
-    "workbench.layoutControl.enabled": false,
-    "workbench.editor.empty.hint": "hidden",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
     },
-    "explorer.compactFolders": false,
-    "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
-    "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
-    "workbench.preferredLightColorTheme": "One Dark Pro Darker",
-    "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
-    "notebook.compactView": false,
-    "oneDarkPro.markdownStyle": false,
-    "oneDarkPro.italic": false,
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.completeFunctionParens": true,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.minimap.renderCharacters": false,
-    "files.exclude": {
-        "**/__pycache__": true,
-        "tags": true
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
     },
-    "vscode-neovim.statusLineSeparator": "    |    ",
-    "editor.smoothScrolling": true,
-    "editor.mouseWheelScrollSensitivity": 2,
-    "workbench.startupEditor": "none",
-    "window.title": "${rootName}",
-    "workbench.editor.highlightModifiedTabs": true,
-    "editor.stickyTabStops": true,
-    "workbench.editor.tabSizing": "shrink",
-    "workbench.editor.wrapTabs": true,
-    "search.exclude": {
-        "**/*.html": true
+    {
+      "name": "Node Green",
+      "value": "#215732"
     },
-    "debug.internalConsoleOptions": "neverOpen",
-    "debug.hideLauncherWhileDebugging": true,
-    "debug.console.closeOnEnd": true,
-    "window.zoomLevel": 0.5227586988632231,
-    "interactiveWindow.collapseCellInputCode": "never",
-    "window.commandCenter": false,
-    "remote.autoForwardPortsSource": "hybrid",
-    "github.copilot.enable": {
-        "markdown": true,
-        "plaintext": true
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
     },
-    "python.languageServer": "Pylance",
-    "ruff.showNotifications": "always",
-    "github.copilot.editor.enableAutoCompletions": true,
-    "dataWrangler.experiments.fastCsvParsing": true,
-    "interactiveWindow.showExecutionHint": false,
-    "debugpy.debugJustMyCode": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "notebook.outline.showCodeCells": true,
-    "ruff.lineLength": 88,
-    "editor.codeLens": false,
-    "editor.lightbulb.enabled": "on",
-    "editor.parameterHints.enabled": false,
-    "editor.roundedSelection": false,
-    "editor.scrollbar.vertical": "visible",
-    "editor.semanticHighlighting.enabled": false,
-    "editor.cursorBlinking": "phase",
-    "editor.formatOnSaveMode": "modificationsIfAvailable",
-    "editor.quickSuggestions": {
-        "comments": "on",
-        "strings": "on"
+    {
+      "name": "Something Different",
+      "value": "#832561"
     },
-    "workbench.commandPalette.preserveInput": true,
-    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-    "workbench.editor.limit.value": 20,
-    "workbench.editor.tabActionCloseVisibility": false,
-    "window.density.editorTabHeight": "compact",
-    "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
-    "terminal.integrated.shellIntegration.enabled": false,
-    "notebook.defaultFormatter": "charliermarsh.ruff",
-    "notebook.multiCursor.enabled": true,
-    "dataWrangler.experiments.autoDetectCsvDelimiter": true,
-    "github.gitProtocol": "ssh",
-    "git.enableCommitSigning": true,
-    "isort.importStrategy": "fromEnvironment",
-    "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
-    "jupyter.interactiveWindow.viewColumn": "beside",
-    "peacock.affectSideBarBorder": true,
-    "peacock.affectDebuggingStatusBar": true,
-    "peacock.affectStatusAndTitleBorders": true,
-    "peacock.affectTabActiveBorder": true,
-    "python.analysis.autoFormatStrings": true,
-    "python.terminal.shellIntegration.enabled": true,
-    "debugpy.showPythonInlineValues": true,
-    "editor.formatOnSave": true,
-    "chat.detectParticipant.enabled": true,
-    "debug.inlineValues": "off",
-    "oneDarkPro.editorTheme": "One Dark Pro Darker",
-    "git.openRepositoryInParentFolders": "never",
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
     },
-    "files.associations": {
-        "*.ahk": "ahk",
-    },
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "editor.minimap.showRegionSectionHeaders": false,
-    "editor.minimap.enabled": false,
-    "files.trimFinalNewlines": true,
-    "editor.stickyScroll.enabled": false,
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.verticalScrollbarSize": 15,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "workbench.editor.revealIfOpen": true,
+  "zenMode.centerLayout": false,
+  "debug.confirmOnExit": "always",
+  "codesnap.shutterAction": "copy",
+  "scm.diffDecorationsGutterPattern": {
+    "added": true
+  },
+  "search.showLineNumbers": true,
+  "zenMode.hideStatusBar": false,
+  "scm.alwaysShowRepositories": true,
+  "scm.defaultViewMode": "tree",
+  "terminal.integrated.copyOnSelection": true,
+  "codesnap.roundedCorners": false,
+  "gitlens.currentLine.enabled": false,
+  "editor.colorDecorators": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "git.ignoreMissingGitWarning": true,
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.command": false,
+  "gitlens.codeLens.recentChange.command": false,
+  "jupyter.askForKernelRestart": false,
+  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "typescript.tsserver.web.projectWideIntellisense.enabled": false,
+  "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "evenBetterToml.formatter.allowedBlankLines": 2,
+  "editor.mouseWheelZoom": true,
+  "notebook.confirmDeleteRunningCell": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "explorer.compactFolders": false,
+  "workbench.preferredHighContrastColorTheme": "One Dark Pro Darker",
+  "workbench.preferredHighContrastLightColorTheme": "One Dark Pro Darker",
+  "workbench.preferredLightColorTheme": "One Dark Pro Darker",
+  "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+  "notebook.compactView": false,
+  "oneDarkPro.markdownStyle": false,
+  "oneDarkPro.italic": false,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.renderCharacters": false,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "tags": true
+  },
+  "vscode-neovim.statusLineSeparator": "    |    ",
+  "editor.smoothScrolling": true,
+  "editor.mouseWheelScrollSensitivity": 2,
+  "workbench.startupEditor": "none",
+  "window.title": "${rootName}",
+  "workbench.editor.highlightModifiedTabs": true,
+  "editor.stickyTabStops": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.wrapTabs": true,
+  "search.exclude": {
+    "**/*.html": true
+  },
+  "debug.internalConsoleOptions": "neverOpen",
+  "debug.hideLauncherWhileDebugging": true,
+  "debug.console.closeOnEnd": true,
+  "window.zoomLevel": 0.5227586988632231,
+  "interactiveWindow.collapseCellInputCode": "never",
+  "window.commandCenter": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "github.copilot.enable": {
+    "markdown": true,
+    "plaintext": true
+  },
+  "python.languageServer": "Pylance",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "dataWrangler.experiments.fastCsvParsing": true,
+  "interactiveWindow.showExecutionHint": false,
+  "debugpy.debugJustMyCode": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "notebook.outline.showCodeCells": true,
+  "ruff.lineLength": 88,
+  "editor.codeLens": false,
+  "editor.lightbulb.enabled": "on",
+  "editor.parameterHints.enabled": false,
+  "editor.roundedSelection": false,
+  "editor.scrollbar.vertical": "visible",
+  "editor.semanticHighlighting.enabled": false,
+  "editor.cursorBlinking": "phase",
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on"
+  },
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
+  "workbench.editor.limit.value": 20,
+  "workbench.editor.tabActionCloseVisibility": false,
+  "window.density.editorTabHeight": "compact",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
+  "terminal.integrated.shellIntegration.enabled": false,
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "notebook.multiCursor.enabled": true,
+  "dataWrangler.experiments.autoDetectCsvDelimiter": true,
+  "github.gitProtocol": "ssh",
+  "git.enableCommitSigning": true,
+  "isort.importStrategy": "fromEnvironment",
+  "jupyter.interactiveWindow.cellMarker.decorateCells": "allCells",
+  "jupyter.interactiveWindow.viewColumn": "beside",
+  "peacock.affectSideBarBorder": true,
+  "peacock.affectDebuggingStatusBar": true,
+  "peacock.affectStatusAndTitleBorders": true,
+  "peacock.affectTabActiveBorder": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.terminal.shellIntegration.enabled": true,
+  "debugpy.showPythonInlineValues": true,
+  "chat.detectParticipant.enabled": true,
+  "debug.inlineValues": "off",
+  "oneDarkPro.editorTheme": "One Dark Pro Darker",
+  "git.openRepositoryInParentFolders": "never",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "files.associations": {
+    "*.ahk": "ahk"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.trimFinalNewlines": true,
+  "editor.formatOnSave": true,
+  "editor.stickyScroll.enabled": false,
+  "git.blame.editorDecoration.enabled": false,
+  "editor.minimap.showRegionSectionHeaders": false,
+  "editor.accessibilitySupport": "off",
+  "chronicler.ffmpeg-binary": "c:\\Users\\CLAM6\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-7.1-full_build\\bin\\ffmpeg.exe",
+  "screencastMode.keyboardOptions": {
+    "showCommands": false,
+    "showKeybindings": false,
+    "showSingleEditorCursorMoves": false
+  },
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "One Dark Pro Darker"
 }
