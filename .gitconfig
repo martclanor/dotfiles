@@ -1,7 +1,7 @@
 [user]
 	name = Mart Clanor
 	email = mart.dayniel.clanor@witteveenbos.com
-	signingkey = 4883170A764B8D90
+	signingkey = CFB60652F93291AA
 [init]
 	defaultBranch = main
 [core]
