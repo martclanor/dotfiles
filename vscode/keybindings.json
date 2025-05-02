@@ -2179,5 +2179,24 @@
   {
     "key": "ctrl+shift+alt+a",
     "command": "chronicler.recordGif"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.action.chat.open",
+    "when": "!chatSetupHidden"
+  },
+  {
+    "key": "ctrl+alt+m",
+    "command": "workbench.action.chat.toggleAgentMode",
+    "when": "chatHasToolsAgent && chatIsEnabled && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatHasToolsAgent && chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session' || chatIsEnabled && config.chat.unifiedChatView && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatIsEnabled && config.chat.unifiedChatView && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session'"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "-workbench.action.chat.toggleAgentMode",
+    "when": "chatHasToolsAgent && chatIsEnabled && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatHasToolsAgent && chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session' || chatIsEnabled && config.chat.unifiedChatView && inChatInput && inUnifiedChat && !chatSessionRequestInProgress || chatIsEnabled && config.chat.unifiedChatView && inChatInput && !chatSessionRequestInProgress && chatLocation == 'editing-session'"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
   }
 ]

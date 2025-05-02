@@ -188,7 +188,6 @@
   "editor.parameterHints.enabled": false,
   "editor.roundedSelection": false,
   "editor.scrollbar.vertical": "visible",
-  "editor.semanticHighlighting.enabled": false,
   "editor.cursorBlinking": "phase",
   "editor.quickSuggestions": {
     "comments": "on",
@@ -226,7 +225,6 @@
   "files.associations": {
     "*.ahk": "ahk"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.trimFinalNewlines": true,
   "editor.formatOnSave": true,
   "editor.stickyScroll.enabled": false,
@@ -243,5 +241,9 @@
   "workbench.colorTheme": "One Dark Pro Darker",
   "codesnap.showWindowTitle": true,
   "mf6Syntax.maxFileSizeMB": 999,
-  "chat.commandCenter.enabled": false
+  "chat.commandCenter.enabled": false,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "editor.semanticHighlighting.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "hediet.vscode-drawio.resizeImages": null
 }
