@@ -43,6 +43,9 @@ slog() {
 # Prevent ctrl+d from exiting shell
 set -o ignoreeof
 
+# Specify where to display gpg passphrase prompt
+export GPG_TTY=$(tty)
+
 export PIP_REQUIRE_VIRTUALENV=true
 
 # For Windows (git bash)
