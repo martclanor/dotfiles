@@ -41,7 +41,10 @@
     }
   },
   "terminal.integrated.gpuAcceleration": "on",
-  "isort.args": ["--profile", "black"],
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
   "git.ignoreLegacyWarning": true,
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\clam6\\nvim\\bin\\nvim.exe",
   "workbench.list.smoothScrolling": true,
@@ -54,7 +57,9 @@
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#ffffff"
   },
-  "editor.rulers": [88],
+  "editor.rulers": [
+    88
+  ],
   "workbench.sideBar.location": "right",
   "files.refactoring.autoSave": false,
   "editor.semanticTokenColorCustomizations": {},
@@ -124,7 +129,9 @@
   "gitlens.codeLens.authors.command": false,
   "gitlens.codeLens.recentChange.command": false,
   "jupyter.askForKernelRestart": false,
-  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen"
+  ],
   "typescript.tsserver.web.projectWideIntellisense.enabled": false,
   "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
   "jupyter.notebookFileRoot": "${workspaceFolder}",
@@ -172,8 +179,11 @@
   "window.commandCenter": false,
   "remote.autoForwardPortsSource": "hybrid",
   "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
     "markdown": true,
-    "plaintext": true
+    "scminput": false,
+    "python": true
   },
   "python.languageServer": "Pylance",
   "github.copilot.editor.enableAutoCompletions": true,
@@ -244,6 +254,8 @@
   "chat.commandCenter.enabled": false,
   "github.copilot.chat.agent.thinkingTool": true,
   "editor.semanticHighlighting.enabled": false,
-  "github.copilot.nextEditSuggestions.enabled": false,
-  "hediet.vscode-drawio.resizeImages": null
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "hediet.vscode-drawio.resizeImages": null,
+  "workbench.activityBar.location": "top",
+  "python.defaultInterpreterPath": "c:\\Program Files\\QGIS 3.40.4\\apps\\Python312\\python.exe"
 }
