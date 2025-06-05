@@ -23,28 +23,6 @@ RShift::Backspace
     }
 }
 
-; RAlt as modifier for vim-style navigation with other modifiers
-; RAlt + hjkl for arrow keys
->!h:: Send("{Left}")
->!j:: Send("{Down}")
->!k:: Send("{Up}")
->!l:: Send("{Right}")
-; RAlt + Shift + hjkl for Shift + arrow keys
->!+h:: Send("+{Left}")
->!+j:: Send("+{Down}")
->!+k:: Send("+{Up}")
->!+l:: Send("+{Right}")
-; RAlt + Ctrl + hjkl for Ctrl + arrow keys
->!^h:: Send("^{Left}")
->!^j:: Send("^{Down}")
->!^k:: Send("^{Up}")
->!^l:: Send("^{Right}")
-; RAlt + Ctrl + Shift + hjkl for Ctrl + Shift + arrow keys
->!^+h:: Send("^+{Left}")
->!^+j:: Send("^+{Down}")
->!^+k:: Send("^+{Up}")
->!^+l:: Send("^+{Right}")
-
 ; taskbar quick access
 ; #1::#1 ; chrome
 ; #2::#2 ; vscode
