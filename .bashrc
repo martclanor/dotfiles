@@ -54,3 +54,10 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias wslsd='wsl --shutdown'
+
+# Git aliases
+alias g='git status --short'
+alias gs='git status'
+alias gaup='git add --patch --update'
+alias gcv='git commit --verbose'
+alias gcane='git commit --amend --no-edit'
