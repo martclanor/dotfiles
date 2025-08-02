@@ -38,7 +38,8 @@
     "editor.defaultFormatter": null,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
-    }
+    },
+    "diffEditor.ignoreTrimWhitespace": false
   },
   "terminal.integrated.gpuAcceleration": "on",
   "isort.args": ["--profile", "black"],
@@ -149,8 +150,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.minimap.renderCharacters": false,
   "files.exclude": {
-    "**/__pycache__": true,
-    "tags": true
+    "**/__pycache__": true
   },
   "vscode-neovim.statusLineSeparator": "    |    ",
   "editor.smoothScrolling": true,
@@ -228,7 +228,6 @@
   },
   "files.trimFinalNewlines": true,
   "editor.formatOnSave": true,
-  "editor.stickyScroll.enabled": false,
   "git.blame.editorDecoration.enabled": false,
   "editor.minimap.showRegionSectionHeaders": false,
   "editor.accessibilitySupport": "off",
@@ -256,5 +255,10 @@
   "accessibility.signals.onDebugBreak": {
     "sound": "on"
   },
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "workbench.localHistory.maxFileSize": 4096,
+  "editor.largeFileOptimizations": false,
+  "diffEditor.renderSideBySide": false,
+  "mypy.enabled": false,
+  "editor.stickyScroll.enabled": false
 }
