@@ -46,6 +46,10 @@ set -o ignoreeof
 # Specify where to display gpg passphrase prompt
 export GPG_TTY=$(tty)
 
+# Auto-cd and autocorrect cd dir spelling
+shopt -s autocd
+shopt -s cdspell
+
 export PIP_REQUIRE_VIRTUALENV=true
 
 # For Windows (git bash)
