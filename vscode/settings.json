@@ -172,7 +172,7 @@
   "window.commandCenter": false,
   "remote.autoForwardPortsSource": "hybrid",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": true,
     "markdown": true,
     "scminput": false,
@@ -260,5 +260,6 @@
   "editor.largeFileOptimizations": false,
   "diffEditor.renderSideBySide": false,
   "mypy.enabled": false,
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "debug.onTaskErrors": "debugAnyway"
 }
