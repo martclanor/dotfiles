@@ -1,40 +1,361 @@
 <!DOCTYPE shortcuts>
-<qgsshortcuts locale="en_US" version="1.1">
-    <action shortcut="Ctrl+." name="Keyboard Shortcuts…" setting="/shortcuts/mActionConfigureShortcuts"/>
-    <action shortcut="Ctrl+Alt+F" name="Elevation Profile" setting="/shortcuts/mActionElevationProfile"/>
-    <action shortcut="" name="QGIS Home Page" setting="/shortcuts/mActionQgisHomePage"/>
-    <action shortcut="V" name="Paste Style" setting="/shortcuts/mActionPasteStyle"/>
-    <action shortcut="" name="Exit QGIS" setting="/shortcuts/mActionExit"/>
-    <action shortcut="Ctrl+G" name="Split Features" setting="/shortcuts/Split Features"/>
-    <action shortcut="Ctrl+F" name="Select Feature(s)" setting="/shortcuts/mActionSelectFeatures"/>
-    <action shortcut="Ctrl+Alt+Q" name="Layout Manager…" setting="/shortcuts/mActionShowLayoutManager"/>
-    <action shortcut="Ctrl+Shift+G" name="Export Map to Image…" setting="/shortcuts/mActionSaveMapAsImage"/>
-    <action shortcut="Ctrl+R" name="Add Feature" setting="/shortcuts/mActionAddFeature"/>
-    <action shortcut="" name="Deselect Features from All Layers" setting="/shortcuts/mActionDeselectAll"/>
-    <action shortcut="C" name="Copy Style" setting="/shortcuts/mActionCopyStyle"/>
-    <action shortcut="Alt+T" name="Open Attribute Table" setting="/shortcuts/mActionOpenTable"/>
-    <action shortcut="" name="Filter…" setting="/shortcuts/mActionLayerSubsetString"/>
-    <action shortcut="Shift+F1" name="Open Attribute Table (Selected Features)" setting="/shortcuts/mActionOpenTableSelected"/>
-    <action shortcut="Shift+?" name="About" setting="/shortcuts/mActionAbout"/>
-    <action shortcut="" name="Enable Tracing" setting="/shortcuts/EnableTracingAction"/>
-    <action shortcut="Ctrl+G" name="Split Features" setting="/shortcuts/mActionSplitFeatures"/>
-    <action shortcut="T" name="Toolbox" setting="/shortcuts/toolboxAction"/>
-    <action shortcut="F1" name="Open Attribute Table (Visible Features)" setting="/shortcuts/mActionOpenTableVisible"/>
-    <action shortcut="Ctrl+H" name="History…" setting="/shortcuts/historyAction"/>
-    <action shortcut="Ctrl+Shift+F" name="Identify Features" setting="/shortcuts/mActionIdentify"/>
-    <action shortcut="" name="Zoom Full" setting="/shortcuts/mActionZoomFullExtent"/>
-    <action shortcut="Ctrl+E" name="Toggle Editing" setting="/shortcuts/mActionToggleEditing"/>
-    <action shortcut="Ctrl+T" name="Vertex Tool (Current Layer)" setting="/shortcuts/mActionVertexToolActiveLayer"/>
-    <action shortcut="Ctrl+Alt+O" name="Show Layer Order Panel" setting="/shortcuts/ShowLayerOrderPanel"/>
-    <action shortcut="Ctrl+Q" name="Trigger Locator" setting="/shortcuts/Locator"/>
-    <action shortcut="Ctrl+Alt+X" name="Show Overview Panel" setting="/shortcuts/ShowOverviewPanel"/>
-    <action shortcut="" name="Show Statistics Panel" setting="/shortcuts/ShowStatisticsPanel"/>
-    <action shortcut="Ctrl+Alt+B" name="Show Browser Panel" setting="/shortcuts/ShowBrowserPanel"/>
-    <action shortcut="Ctrl+Alt+E" name="Show Layers Panel" setting="/shortcuts/ShowLayersPanel"/>
-    <action shortcut="Ctrl+Alt+Z" name="Show Undo/Redo Panel" setting="/shortcuts/ShowUndoPanel"/>
-    <action shortcut="Ctrl+Alt+A" name="Show Advanced Digitizing Panel" setting="/shortcuts/ShowAdvancedDigitizingPanel"/>
-    <action shortcut="Ctrl+Alt+S" name="Show Style Panel" setting="/shortcuts/ShowLayerStylingPanel"/>
-    <action shortcut="" name="Show GPS Information Panel" setting="/shortcuts/ShowGpsPanel"/>
-    <action shortcut="" name="Show Bookmarks Panel" setting="/shortcuts/ShowBookmarksPanel"/>
-    <action shortcut="Alt+D" name="Show Debugging/Development Tools" setting="/shortcuts/ShowDevToolsPanel"/>
+<qgsshortcuts version="1.1" locale="en_US">
+    <action name="Simplify Feature" shortcut="" setting="/shortcuts/mActionSimplifyFeature"/>
+    <action name="Offset Curve" shortcut="" setting="/shortcuts/mActionOffsetCurve"/>
+    <action name="Elevation Profile" shortcut="Ctrl+Alt+F" setting="/shortcuts/mActionElevationProfile"/>
+    <action name="Create Text Annotation along Line" shortcut="" setting="/shortcuts/mActionTextAnnotationalongLine"/>
+    <action name="Random Points Inside Polygons…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:randompointsinsidepolygons"/>
+    <action name="Contour…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:contour"/>
+    <action name="Zoom to Selection" shortcut="Ctrl+J" setting="/shortcuts/mActionZoomToSelected"/>
+    <action name="Simulate Protanopia Color Blindness (No Red)" shortcut="" setting="/shortcuts/mActionPreviewProtanope"/>
+    <action name="mActionCatchForCustomization" shortcut="Ctrl+M" setting="/shortcuts/actionActionCatchForCustomization"/>
+    <action name="Statistical Summary" shortcut="" setting="/shortcuts/mActionStatisticalSummary"/>
+    <action name="Grid (Data Metrics)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:griddatametrics"/>
+    <action name="Raster Calculator…" shortcut="" setting="/shortcuts/mActionShowRasterCalculator"/>
+    <action name="Pan Map" shortcut="" setting="/shortcuts/mActionPan"/>
+    <action name="Rollback for Selected Layer(s)" shortcut="" setting="/shortcuts/mActionRollbackEdits"/>
+    <action name="Synchronize from QField" shortcut="" setting="/shortcuts/Synchronize from QField"/>
+    <action name="Simulate Deuteranopia Color Blindness (No Green)" shortcut="" setting="/shortcuts/mActionPreviewDeuteranope"/>
+    <action name="Join Attributes by Location…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:joinattributesbylocation"/>
+    <action name="Random Points on Lines…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:randompointsonlines"/>
+    <action name="Delete Selected" shortcut="" setting="/shortcuts/mActionDeleteSelected"/>
+    <action name="Polygonize (Raster to Vector)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:polygonize"/>
+    <action name="Temporal Controller" shortcut="" setting="/shortcuts/mActionTemporalController"/>
+    <action name="Options" shortcut="" setting="/shortcuts/optionsAction"/>
+    <action name="Save As…" shortcut="" setting="/shortcuts/mActionSaveProjectAs"/>
+    <action name="Show All in Overview" shortcut="" setting="/shortcuts/mActionAddAllToOverview"/>
+    <action name="Merge Vector Layers…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:mergevectorlayers"/>
+    <action name="Voronoi Polygons…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:voronoipolygons"/>
+    <action name="Add WFS / OGC API - Features Layer…" shortcut="" setting="/shortcuts/mActionAddWfsLayer"/>
+    <action name="Diagram Options" shortcut="" setting="/shortcuts/mActionDiagramProperties"/>
+    <action name="Snapping on Intersection" shortcut="" setting="/shortcuts/IntersectionSnappingAction"/>
+    <action name="Intersection…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:intersection"/>
+    <action name="Current Edits" shortcut="" setting="/shortcuts/mActionAllEdits"/>
+    <action name="Custom Projections…" shortcut="" setting="/shortcuts/mActionCustomProjection"/>
+    <action name="Show Vertex Editor" shortcut="" setting="/shortcuts/Show Vertex Editor"/>
+    <action name="Qgis2threejs Exporter" shortcut="" setting="/shortcuts/Qgis2threejsExporter"/>
+    <action name="Grid (Inverse Distance to a Power)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:gridinversedistance"/>
+    <action name="Move Label, Diagram or Callout" shortcut="" setting="/shortcuts/mActionMoveLabel"/>
+    <action name="Pan Map to Selection" shortcut="" setting="/shortcuts/mActionPanToSelected"/>
+    <action name="Show Private Layers" shortcut="" setting="/shortcuts/Show Private Layers"/>
+    <action name="Merge…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:merge"/>
+    <action name="New Map View" shortcut="Ctrl+M" setting="/shortcuts/mActionNewMapCanvas"/>
+    <action name="Digitize Shape" shortcut="" setting="/shortcuts/mActionDigitizeShape"/>
+    <action name="Hide Selected Layers" shortcut="" setting="/shortcuts/mActionHideSelectedLayers"/>
+    <action name="Trim/Extend Feature" shortcut="" setting="/shortcuts/mActionTrimExtendFeature"/>
+    <action name="Hide All from Overview" shortcut="" setting="/shortcuts/mActionRemoveAllFromOverview"/>
+    <action name="Copy and Move Feature(s)" shortcut="" setting="/shortcuts/mActionMoveFeatureCopy"/>
+    <action name="Save As Layer Definition File…" shortcut="" setting="/shortcuts/mActionSaveLayerDefinition"/>
+    <action name="PyQGIS API Documentation" shortcut="" setting="/shortcuts/mActionHelpPyQgisAPI"/>
+    <action name="Densify by Count…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:densifygeometries"/>
+    <action name="North Arrow…" shortcut="" setting="/shortcuts/mActionDecorationNorthArrow"/>
+    <action name="Clip…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:clip"/>
+    <action name="Expand All" shortcut="" setting="/shortcuts/Expand All"/>
+    <action name="Fill NoData…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:fillnodata"/>
+    <action name="Extract Layer Extent…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:polygonfromlayerextent"/>
+    <action name="Export Project to DXF…" shortcut="" setting="/shortcuts/mActionDxfExport"/>
+    <action name="Scale Feature(s)" shortcut="" setting="/shortcuts/mActionScaleFeature"/>
+    <action name="Nearest Neighbour Analysis…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:nearestneighbouranalysis"/>
+    <action name="Report an Issue" shortcut="" setting="/shortcuts/mActionReportaBug"/>
+    <action name="Main Annotation Layer Properties…" shortcut="" setting="/shortcuts/mMainAnnotationLayerProperties"/>
+    <action name="Dissolve…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:dissolve"/>
+    <action name="Add WMS/WMTS Layer…" shortcut="" setting="/shortcuts/mActionAddWmsLayer"/>
+    <action name="Title Label…" shortcut="" setting="/shortcuts/mActionDecorationTitle"/>
+    <action name="Distance Matrix…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:distancematrix"/>
+    <action name="Layout Manager…" shortcut="Ctrl+Alt+Q" setting="/shortcuts/mActionShowLayoutManager"/>
+    <action name="Scale Bar…" shortcut="" setting="/shortcuts/mActionDecorationScaleBar"/>
+    <action name="Invert Feature Selection" shortcut="" setting="/shortcuts/mActionInvertSelection"/>
+    <action name="Fill Ring" shortcut="" setting="/shortcuts/mActionFillRing"/>
+    <action name="Merge Selected Features" shortcut="" setting="/shortcuts/mActionMergeFeatures"/>
+    <action name="Warp (Reproject)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:warpreproject"/>
+    <action name="Layout Extents…" shortcut="" setting="/shortcuts/mActionDecorationLayoutExtent"/>
+    <action name="Labeling" shortcut="" setting="/shortcuts/mActionLabeling"/>
+    <action name="Increase Brightness" shortcut="" setting="/shortcuts/mActionIncreaseBrightness"/>
+    <action name="Set Project CRS from Layer" shortcut="" setting="/shortcuts/mActionSetProjectCRSFromLayer"/>
+    <action name="Merge Attributes of Selected Features" shortcut="" setting="/shortcuts/mActionMergeFeatureAttributes"/>
+    <action name="Zoom Full" shortcut="" setting="/shortcuts/mActionZoomFullExtent"/>
+    <action name="Feature Action" shortcut="" setting="/shortcuts/mActionFeatureAction"/>
+    <action name="Measure Bearing" shortcut="" setting="/shortcuts/mActionMeasureBearing"/>
+    <action name="Build Virtual Raster…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:buildvirtualraster"/>
+    <action name="Toggle Selected Layers" shortcut="" setting="/shortcuts/mActionToggleSelectedLayers"/>
+    <action name="C++ API Documentation" shortcut="" setting="/shortcuts/mActionHelpAPI"/>
+    <action name="Show All Layers" shortcut="Ctrl+Shift+U" setting="/shortcuts/mActionShowAllLayers"/>
+    <action name="Clip Raster by Extent…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:cliprasterbyextent"/>
+    <action name="New GeoPackage Layer…" shortcut="Ctrl+Shift+N" setting="/shortcuts/mActionNewGeoPackageLayer"/>
+    <action name="History…" shortcut="Ctrl+H" setting="/shortcuts/historyAction"/>
+    <action name="Topological Editing" shortcut="" setting="/shortcuts/TopologicalEditingAction"/>
+    <action name="Interface Customization…" shortcut="" setting="/shortcuts/mActionCustomization"/>
+    <action name="New Print Layout…" shortcut="Ctrl+P" setting="/shortcuts/mActionNewPrintLayout"/>
+    <action name="Add Mesh Layer..." shortcut="" setting="/shortcuts/mActionAddMeshLayer"/>
+    <action name="Embed Layers and Groups…" shortcut="" setting="/shortcuts/mActionEmbedLayers"/>
+    <action name="Increase Contrast" shortcut="" setting="/shortcuts/mActionIncreaseContrast"/>
+    <action name="Cut Features" shortcut="" setting="/shortcuts/mActionCutFeatures"/>
+    <action name="Clip Raster by Mask Layer…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:cliprasterbymasklayer"/>
+    <action name="Increase Gamma" shortcut="" setting="/shortcuts/mActionIncreaseGamma"/>
+    <action name="Filter…" shortcut="" setting="/shortcuts/mActionLayerSubsetString"/>
+    <action name="Basic Statistics for Fields…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:basicstatisticsforfields"/>
+    <action name="Line Intersections…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:lineintersections"/>
+    <action name="Eliminate Selected Polygons…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:eliminateselectedpolygons"/>
+    <action name="Mesh Calculator…" shortcut="" setting="/shortcuts/mActionShowMeshCalculator"/>
+    <action name="List Unique Values…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:listuniquevalues"/>
+    <action name="Select Features by Polygon" shortcut="" setting="/shortcuts/mActionSelectPolygon"/>
+    <action name="Regular Points…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:regularpoints"/>
+    <action name="Random Selection…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:randomselection"/>
+    <action name="Select by Location" shortcut="" setting="/shortcuts/mProcessingAlg_native:selectbylocation"/>
+    <action name="Grid (Moving Average)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:gridaverage"/>
+    <action name="Options…" shortcut="" setting="/shortcuts/mActionOptions"/>
+    <action name="Split Parts" shortcut="" setting="/shortcuts/mActionSplitParts"/>
+    <action name="New Mesh Layer…" shortcut="" setting="/shortcuts/mActionNewMeshLayer"/>
+    <action name="Show Spatial Bookmarks" shortcut="" setting="/shortcuts/mActionShowBookmarks"/>
+    <action name="Measure Line" shortcut="Ctrl+Shift+M" setting="/shortcuts/mActionMeasure"/>
+    <action name="Highlight Pinned Labels, Diagrams and Callouts" shortcut="" setting="/shortcuts/mActionShowPinnedLabels"/>
+    <action name="Paste Features" shortcut="" setting="/shortcuts/mActionPasteFeatures"/>
+    <action name="QGIS Home Page" shortcut="" setting="/shortcuts/mActionQgisHomePage"/>
+    <action name="Show Map Tips" shortcut="" setting="/shortcuts/mActionMapTips"/>
+    <action name="Decrease Contrast" shortcut="" setting="/shortcuts/mActionDecreaseContrast"/>
+    <action name="Toggle Editing" shortcut="Ctrl+E" setting="/shortcuts/mActionToggleEditing"/>
+    <action name="Add WCS Layer…" shortcut="" setting="/shortcuts/mActionAddWcsLayer"/>
+    <action name="Create Spatial Index…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:createspatialindex"/>
+    <action name="Simplify…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:simplifygeometries"/>
+    <action name="Paste Style" shortcut="V" setting="/shortcuts/mActionPasteStyle"/>
+    <action name="Package for QField" shortcut="" setting="/shortcuts/Package for QField"/>
+    <action name="Local Cumulative Cut Stretch" shortcut="" setting="/shortcuts/mActionLocalCumulativeCutStretch"/>
+    <action name="Zoom Out" shortcut="Ctrl+Alt+-" setting="/shortcuts/mActionZoomOut"/>
+    <action name="Extract Vertices…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:extractvertices"/>
+    <action name="Add Point Cloud Layer..." shortcut="" setting="/shortcuts/mActionAddPointCloudLayer"/>
+    <action name="Open Attribute Table" shortcut="Alt+T" setting="/shortcuts/mActionOpenTable"/>
+    <action name="Delete Ring" shortcut="" setting="/shortcuts/mActionDeleteRing"/>
+    <action name="Export Map to PDF…" shortcut="" setting="/shortcuts/mActionSaveMapAsPdf"/>
+    <action name="Measure Angle" shortcut="" setting="/shortcuts/mActionMeasureAngle"/>
+    <action name="Open Field Calculator…" shortcut="" setting="/shortcuts/mActionOpenFieldCalc"/>
+    <action name="SVG Annotation" shortcut="" setting="/shortcuts/mActionSvgAnnotation"/>
+    <action name="Add Polygon Feature" shortcut="Ctrl+R" setting="/shortcuts/mActionAddFeature"/>
+    <action name="Hide All Layers" shortcut="Ctrl+Shift+H" setting="/shortcuts/mActionHideAllLayers"/>
+    <action name="Move Feature(s)" shortcut="" setting="/shortcuts/mActionMoveFeature"/>
+    <action name="Grid…" shortcut="" setting="/shortcuts/mActionDecorationGrid"/>
+    <action name="Zoom to Native Resolution (100%)" shortcut="" setting="/shortcuts/mActionZoomActualSize"/>
+    <action name="Hillshade…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:hillshade"/>
+    <action name="Create Text Annotation at Point" shortcut="" setting="/shortcuts/mActionTextAnnotationatPoint"/>
+    <action name="New Vector Layer…" shortcut="" setting="/shortcuts/mActionPasteAsNewVector"/>
+    <action name="Enable Tracing" shortcut="" setting="/shortcuts/EnableTracingAction"/>
+    <action name="Refresh" shortcut="F5" setting="/shortcuts/mActionDraw"/>
+    <action name="Model Designer…" shortcut="Ctrl+Alt+G" setting="/shortcuts/modelerAction"/>
+    <action name="Zoom In" shortcut="Ctrl+Alt++" setting="/shortcuts/mActionZoomIn"/>
+    <action name="Modify Attributes of Selected Features" shortcut="" setting="/shortcuts/mActionMultiEditAttributes"/>
+    <action name="Reproject Layer…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:reprojectlayer"/>
+    <action name="Self-snapping" shortcut="" setting="/shortcuts/SelfSnappingAction"/>
+    <action name="Digitize with Segment" shortcut="" setting="/shortcuts/mActionDigitizeWithSegment"/>
+    <action name="Polygons to Lines…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:polygonstolines"/>
+    <action name="Check Validity…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:checkvalidity"/>
+    <action name="Random Points in Extent…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:randompointsinextent"/>
+    <action name="Show Spatial Bookmark Manager" shortcut="Ctrl+Shift+W" setting="/shortcuts/mActionShowBookmarkManager"/>
+    <action name="Decrease Brightness" shortcut="" setting="/shortcuts/mActionDecreaseBrightness"/>
+    <action name="Copy Layer" shortcut="" setting="/shortcuts/mActionCopyLayer"/>
+    <action name="Multipart to Singleparts…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:multiparttosingleparts"/>
+    <action name="Open Attribute Table (Selected Features)" shortcut="Shift+F1" setting="/shortcuts/mActionOpenTableSelected"/>
+    <action name="Copy Style" shortcut="C" setting="/shortcuts/mActionCopyStyle"/>
+    <action name="Toggle Panel Visibility" shortcut="Ctrl+Tab" setting="/shortcuts/mActionTogglePanelsVisibility"/>
+    <action name="Buffer…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:buffer"/>
+    <action name="Add Raster Layer…" shortcut="Ctrl+Shift+R" setting="/shortcuts/mActionAddRasterLayer"/>
+    <action name="Close" shortcut="" setting="/shortcuts/mActionCloseProject"/>
+    <action name="Layer Styling" shortcut="Ctrl+Alt+S" setting="/shortcuts/Layer Styling"/>
+    <action name="Cancel for All Layers" shortcut="" setting="/shortcuts/mActionCancelAllEdits"/>
+    <action name="About" shortcut="Shift+?" setting="/shortcuts/mActionAbout"/>
+    <action name="Snapping Options…" shortcut="" setting="/shortcuts/mActionSnappingOptions"/>
+    <action name="Add Delimited Text Layer…" shortcut="" setting="/shortcuts/mActionAddDelimitedText"/>
+    <action name="Add GPX Layer..." shortcut="" setting="/shortcuts/mActionAddGpsLayer"/>
+    <action name="Build Overviews (Pyramids)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:overviews"/>
+    <action name="Data Source Manager" shortcut="Ctrl+L" setting="/shortcuts/mActionDataSourceManager"/>
+    <action name="New GPX Layer…" shortcut="" setting="/shortcuts/mActionNewGpxLayer"/>
+    <action name="Add Vector Tile Layer…" shortcut="" setting="/shortcuts/mActionAddVectorTileLayer"/>
+    <action name="Pin/Unpin Labels and Diagrams" shortcut="" setting="/shortcuts/mActionPinLabels"/>
+    <action name="More Add Layer actions here" shortcut="" setting="/shortcuts/mActionAddLayerSeparator"/>
+    <action name="Measure Area" shortcut="Ctrl+Shift+J" setting="/shortcuts/mActionMeasureArea"/>
+    <action name="Add Ring" shortcut="" setting="/shortcuts/mActionAddRing"/>
+    <action name="Delaunay Triangulation…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:delaunaytriangulation"/>
+    <action name="Reselect Features" shortcut="" setting="/shortcuts/mActionReselect"/>
+    <action name="Package for QField" shortcut="" setting="/shortcuts/Package for QField"/>
+    <action name="Normal" shortcut="" setting="/shortcuts/mActionPreviewModeOff"/>
+    <action name="Open…" shortcut="Ctrl+O" setting="/shortcuts/mActionOpenProject"/>
+    <action name="Image…" shortcut="" setting="/shortcuts/mActionDecorationImage"/>
+    <action name="Configure Current Project" shortcut="" setting="/shortcuts/Configure Current Project"/>
+    <action name="Roughness…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:roughness"/>
+    <action name="Sieve…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:sieve"/>
+    <action name="Extract Projection…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:extractprojection"/>
+    <action name="New 3D Map View" shortcut="Ctrl+Alt+M" setting="/shortcuts/mActionNew3DMapCanvas"/>
+    <action name="Union…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:union"/>
+    <action name="Zoom to Layer" shortcut="" setting="/shortcuts/mActionZoomToLayer"/>
+    <action name="Synchronize from QField" shortcut="" setting="/shortcuts/Synchronize from QField"/>
+    <action name="Python Console" shortcut="Ctrl+`" setting="/shortcuts/mActionShowPythonDialog"/>
+    <action name="Decrease Gamma" shortcut="" setting="/shortcuts/mActionDecreaseGamma"/>
+    <action name="Align Rasters…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:alignrasters"/>
+    <action name="Aspect…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:aspect"/>
+    <action name="Select Within Distance" shortcut="" setting="/shortcuts/mProcessingAlg_native:selectwithindistance"/>
+    <action name="Add/Edit Virtual Layer…" shortcut="" setting="/shortcuts/mActionAddVirtualLayer"/>
+    <action name="Count Points in Polygon…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:countpointsinpolygon"/>
+    <action name="Layer Properties…" shortcut="" setting="/shortcuts/mActionLayerProperties"/>
+    <action name="Keyboard Shortcuts…" shortcut="Ctrl+." setting="/shortcuts/mActionConfigureShortcuts"/>
+    <action name="Create Line Annotation" shortcut="" setting="/shortcuts/mActionLineAnnotation"/>
+    <action name="New Virtual Layer…" shortcut="" setting="/shortcuts/mActionNewVirtualLayer"/>
+    <action name="Delete Part" shortcut="" setting="/shortcuts/mActionDeletePart"/>
+    <action name="Set CRS of Layer(s)" shortcut="Ctrl+Shift+C" setting="/shortcuts/mActionSetLayerCRS"/>
+    <action name="Export Map to Image…" shortcut="Ctrl+Shift+G" setting="/shortcuts/mActionSaveMapAsImage"/>
+    <action name="Save Layer Edits" shortcut="" setting="/shortcuts/mActionSaveLayerEdits"/>
+    <action name="Donate to QGIS" shortcut="" setting="/shortcuts/mActionDonate"/>
+    <action name="Select All Features" shortcut="" setting="/shortcuts/mActionSelectAll"/>
+    <action name="DB Manager…" shortcut="" setting="/shortcuts/dbManager"/>
+    <action name="Zoom Last" shortcut="" setting="/shortcuts/mActionZoomLast"/>
+    <action name="RGB to PCT…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:rgbtopct"/>
+    <action name="Toggle Map Only" shortcut="Ctrl+Shift+Tab" setting="/shortcuts/mActionToggleMapOnly"/>
+    <action name="Open Attribute Table (Visible Features)" shortcut="F1" setting="/shortcuts/mActionOpenTableVisible"/>
+    <action name="Preferences" shortcut="" setting="/shortcuts/Preferences"/>
+    <action name="Digitize with Curve" shortcut="Ctrl+Shift+G" setting="/shortcuts/mActionDigitizeWithCurve"/>
+    <action name="Topographic Position Index (TPI)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:tpitopographicpositionindex"/>
+    <action name="Collect Geometries…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:collect"/>
+    <action name="Add SpatiaLite Layer…" shortcut="Ctrl+Shift+L" setting="/shortcuts/mActionAddSpatiaLiteLayer"/>
+    <action name="Edit Features In-Place" shortcut="" setting="/shortcuts/editInPlaceFeatures"/>
+    <action name="Help Contents" shortcut="F1" setting="/shortcuts/mActionHelpContents"/>
+    <action name="Save As…" shortcut="" setting="/shortcuts/mActionLayerSaveAs"/>
+    <action name="Add ArcGIS REST Server Layer…" shortcut="" setting="/shortcuts/mActionAddAfsLayer"/>
+    <action name="Revert…" shortcut="" setting="/shortcuts/mActionRevertProject"/>
+    <action name="Show in Overview" shortcut="" setting="/shortcuts/mActionAddToOverview"/>
+    <action name="Save" shortcut="Ctrl+S" setting="/shortcuts/mActionSaveProject"/>
+    <action name="Lines to Polygons…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:linestopolygons"/>
+    <action name="Deselect Features from the Current Active Layer" shortcut="Ctrl+Shift+A" setting="/shortcuts/mActionDeselectActiveLayer"/>
+    <action name="Translate (Convert Format)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:translate"/>
+    <action name="Sum Line Lengths…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:sumlinelengths"/>
+    <action name="Duplicate Layer(s)" shortcut="" setting="/shortcuts/mActionDuplicateLayer"/>
+    <action name="Add Vector Layer…" shortcut="Ctrl+Shift+V" setting="/shortcuts/mActionAddOgrLayer"/>
+    <action name="Select Features by Expression…" shortcut="Ctrl+F3" setting="/shortcuts/mActionSelectByExpression"/>
+    <action name="Import Layers from DWG/DXF…" shortcut="" setting="/shortcuts/mActionDwgImport"/>
+    <action name="QGIS Sustaining Members" shortcut="" setting="/shortcuts/mActionSponsors"/>
+    <action name="Create Grid…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:creategrid"/>
+    <action name="Manage and Install Plugins…" shortcut="" setting="/shortcuts/mActionManagePlugins"/>
+    <action name="Manage 3D Map Views" shortcut="" setting="/shortcuts/mActionManage3DMapViews"/>
+    <action name="Create Polygon Annotation" shortcut="" setting="/shortcuts/mActionPolygonAnnotation"/>
+    <action name="Deselect Features from All Layers" shortcut="" setting="/shortcuts/mActionDeselectAll"/>
+    <action name="Full Dataset Cumulative Cut Stretch" shortcut="" setting="/shortcuts/mActionFullCumulativeCutStretch"/>
+    <action name="Mean Coordinate(s)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:meancoordinates"/>
+    <action name="Check QGIS Version" shortcut="" setting="/shortcuts/mActionCheckQgisVersion"/>
+    <action name="Paste Layer/Group" shortcut="" setting="/shortcuts/mActionPasteLayer"/>
+    <action name="Simulate Achromatopsia Color Blindness (Grayscale)" shortcut="" setting="/shortcuts/mActionPreviewModeGrayscale"/>
+    <action name="Georeferencer…" shortcut="" setting="/shortcuts/mActionShowGeoreferencer"/>
+    <action name="Add PostGIS Layers…" shortcut="" setting="/shortcuts/mActionAddPgLayer"/>
+    <action name="Rotate Point Symbols" shortcut="" setting="/shortcuts/mActionRotatePointSymbols"/>
+    <action name="Hide Deselected Layers" shortcut="" setting="/shortcuts/mActionHideDeselectedLayers"/>
+    <action name="Terrain Ruggedness Index (TRI)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:triterrainruggednessindex"/>
+    <action name="Zoom to Layer(s)" shortcut="" setting="/shortcuts/mActionZoomToLayers"/>
+    <action name="Toggle Full Screen Mode" shortcut="F11" setting="/shortcuts/mActionToggleFullScreen"/>
+    <action name="Open Attribute Table (Edited and New Features)" shortcut="" setting="/shortcuts/mActionOpenTableEdited"/>
+    <action name="Copyright Label…" shortcut="" setting="/shortcuts/mActionDecorationCopyright"/>
+    <action name="Add Geometry Attributes…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:exportaddgeometrycolumns"/>
+    <action name="Temporary Scratch Layer…" shortcut="Ctrl+Alt+V" setting="/shortcuts/mActionPasteAsNewMemoryVector"/>
+    <action name="New Blank Project" shortcut="" setting="/shortcuts/mActionNewBlankProject"/>
+    <action name="Raster Information…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:gdalinfo"/>
+    <action name="Select Features by Radius" shortcut="" setting="/shortcuts/mActionSelectRadius"/>
+    <action name="Need Commercial Support?" shortcut="" setting="/shortcuts/mActionNeedSupport"/>
+    <action name="Rollback for All Layers" shortcut="" setting="/shortcuts/mActionRollbackAllEdits"/>
+    <action name="Toggle Snapping" shortcut="S" setting="/shortcuts/EnableSnappingAction"/>
+    <action name="Style Manager…" shortcut="" setting="/shortcuts/mActionStyleManager"/>
+    <action name="Identify Features" shortcut="Ctrl+Shift+F" setting="/shortcuts/mActionIdentify"/>
+    <action name="New Report…" shortcut="" setting="/shortcuts/mActionNewReport"/>
+    <action name="Reverse line" shortcut="" setting="/shortcuts/mActionReverseLine"/>
+    <action name="Local Histogram Stretch" shortcut="" setting="/shortcuts/mActionLocalHistogramStretch"/>
+    <action name="Rotate Feature(s)" shortcut="" setting="/shortcuts/mActionRotateFeature"/>
+    <action name="Add XYZ Layer…" shortcut="" setting="/shortcuts/mActionAddXyzLayer"/>
+    <action name="Difference…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:difference"/>
+    <action name="Modify Annotations" shortcut="" setting="/shortcuts/mActionModifyAnnotation"/>
+    <action name="Synchronize Current Cloud Project" shortcut="" setting="/shortcuts/Synchronize Current Cloud Project"/>
+    <action name="New Temporary Scratch Layer…" shortcut="" setting="/shortcuts/mActionNewMemoryLayer"/>
+    <action name="Save for Selected Layer(s)" shortcut="" setting="/shortcuts/mActionSaveEdits"/>
+    <action name="Stream Digitizing" shortcut="R" setting="/shortcuts/mActionStreamDigitize"/>
+    <action name="New" shortcut="Ctrl+N" setting="/shortcuts/mActionNewProject"/>
+    <action name="Add Part" shortcut="" setting="/shortcuts/mActionAddPart"/>
+    <action name="Get Involved" shortcut="" setting="/shortcuts/mActionGetInvolved"/>
+    <action name="Symmetrical Difference…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:symmetricaldifference"/>
+    <action name="Set Scale Visibility of Layer(s)" shortcut="" setting="/shortcuts/mActionSetLayerScaleVisibility"/>
+    <action name="Copy Features" shortcut="" setting="/shortcuts/mActionCopyFeatures"/>
+    <action name="Filter Legend by Map Content" shortcut="" setting="/shortcuts/Filter Legend by Map Content"/>
+    <action name="Simulate Tritanopia Color Blindness (No Blue)" shortcut="" setting="/shortcuts/mActionPreviewTritanope"/>
+    <action name="Reshape Features" shortcut="" setting="/shortcuts/mActionReshapeFeatures"/>
+    <action name="Full Histogram Stretch" shortcut="" setting="/shortcuts/mActionFullHistogramStretch"/>
+    <action name="Select Features by Value…" shortcut="F3" setting="/shortcuts/mActionSelectByForm"/>
+    <action name="New Annotation Layer" shortcut="" setting="/shortcuts/mActionCreateAnnotationLayer"/>
+    <action name="Near Black…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:nearblack"/>
+    <action name="Show Unplaced Labels" shortcut="" setting="/shortcuts/mActionShowUnplacedLabels"/>
+    <action name="New SpatiaLite Layer…" shortcut="" setting="/shortcuts/mActionNewSpatiaLiteLayer"/>
+    <action name="Random Points in Layer Bounds…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:randompointsinlayerbounds"/>
+    <action name="Offset Point Symbol" shortcut="" setting="/shortcuts/mActionOffsetPointSymbol"/>
+    <action name="Zoom Next" shortcut="" setting="/shortcuts/mActionZoomNext"/>
+    <action name="Cancel for Selected Layer(s)" shortcut="" setting="/shortcuts/mActionCancelEdits"/>
+    <action name="Remove Layer/Group" shortcut="Ctrl+D" setting="/shortcuts/mActionRemoveLayer"/>
+    <action name="Random Selection Within Subsets…" shortcut="" setting="/shortcuts/mProcessingUserMenu_qgis:randomselectionwithinsubsets"/>
+    <action name="New Shapefile Layer…" shortcut="" setting="/shortcuts/mActionNewVectorLayer"/>
+    <action name="Select Feature(s)" shortcut="Ctrl+F" setting="/shortcuts/mActionSelectFeatures"/>
+    <action name="Grid (Nearest Neighbor)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:gridnearestneighbor"/>
+    <action name="Add Group" shortcut="" setting="/shortcuts/Add Group"/>
+    <action name="Save for All Layers" shortcut="" setting="/shortcuts/mActionSaveAllEdits"/>
+    <action name="Add Oracle Spatial Layer…" shortcut="" setting="/shortcuts/mActionAddOracleLayer"/>
+    <action name="Vertex Tool (Current Layer)" shortcut="Ctrl+T" setting="/shortcuts/mActionVertexToolActiveLayer"/>
+    <action name="Select by Location…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:selectbylocation"/>
+    <action name="Rasterize (Vector to Raster)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:rasterize"/>
+    <action name="Tile Index…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:tileindex"/>
+    <action name="Vertex Tool (All Layers)" shortcut="" setting="/shortcuts/mActionVertexTool"/>
+    <action name="Show/Hide Labels and Diagrams" shortcut="" setting="/shortcuts/mActionShowHideLabels"/>
+    <action name="Proximity (Raster Distance)…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:proximity"/>
+    <action name="Add SAP HANA Spatial Layer…" shortcut="" setting="/shortcuts/mActionAddHanaLayer"/>
+    <action name="Results Viewer" shortcut="Ctrl+Alt+R" setting="/shortcuts/resultsViewer"/>
+    <action name="Slope…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:slope"/>
+    <action name="Toggle Selected Layers Independently" shortcut="" setting="/shortcuts/mActionToggleSelectedLayersIndependently"/>
+    <action name="Form Annotation" shortcut="" setting="/shortcuts/mActionFormAnnotation"/>
+    <action name="Add from Layer Definition File…" shortcut="" setting="/shortcuts/mActionAddLayerDefinition"/>
+    <action name="Select Features by Freehand" shortcut="" setting="/shortcuts/mActionSelectFreehand"/>
+    <action name="Split Features" shortcut="Ctrl+G" setting="/shortcuts/mActionSplitFeatures"/>
+    <action name="Create Marker Annotation" shortcut="" setting="/shortcuts/mActionMarkerAnnotation"/>
+    <action name="Create GIS Project" shortcut="" setting="/shortcuts/Create GIS Project"/>
+    <action name="Undo" shortcut="Ctrl+Z" setting="/shortcuts/mActionUndo"/>
+    <action name="New Spatial Bookmark…" shortcut="Ctrl+B" setting="/shortcuts/mActionNewBookmark"/>
+    <action name="Assign Projection…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:assignprojection"/>
+    <action name="Redo" shortcut="" setting="/shortcuts/mActionRedo"/>
+    <action name="Properties…" shortcut="Ctrl+Shift+P" setting="/shortcuts/mActionProjectProperties"/>
+    <action name="QFieldCloud Projects Overview" shortcut="" setting="/shortcuts/QFieldCloud Projects Overview"/>
+    <action name="Show Selected Layers" shortcut="" setting="/shortcuts/mActionShowSelectedLayers"/>
+    <action name="Collapse All" shortcut="" setting="/shortcuts/Collapse All"/>
+    <action name="Exit QGIS" shortcut="" setting="/shortcuts/mActionExit"/>
+    <action name="Convex Hull…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:convexhull"/>
+    <action name="Text Annotation" shortcut="" setting="/shortcuts/mActionTextAnnotation"/>
+    <action name="Centroids…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:centroids"/>
+    <action name="HTML Annotation" shortcut="" setting="/shortcuts/mActionHtmlAnnotation"/>
+    <action name="Add MS SQL Server Layer…" shortcut="" setting="/shortcuts/mActionAddMssqlLayer"/>
+    <action name="Simulate Monochrome" shortcut="" setting="/shortcuts/mActionPreviewModeMono"/>
+    <action name="Split Vector Layer…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:splitvectorlayer"/>
+    <action name="Rotate Label" shortcut="" setting="/shortcuts/mActionRotateLabel"/>
+    <action name="PCT to RGB…" shortcut="" setting="/shortcuts/mProcessingUserMenu_gdal:pcttorgb"/>
+    <action name="Random Points in Polygons…" shortcut="" setting="/shortcuts/mProcessingUserMenu_native:randompointsinpolygons"/>
+    <action name="Toolbox" shortcut="Ctrl+Shift+T" setting="/shortcuts/toolboxAction"/>
+    <action name="Change Label" shortcut="" setting="/shortcuts/mActionChangeLabelProperties"/>
+    <action name="Set 3D Scene Extent on 2D Map View" shortcut="" setting="/shortcuts/m3DSetSceneExtent"/>
+    <action name="Show Layers Panel" shortcut="Ctrl+Shift+E" setting="/shortcuts/ShowLayersPanel"/>
+    <action name="Show Layer Order Panel" shortcut="Ctrl+Shift+O" setting="/shortcuts/ShowLayerOrderPanel"/>
+    <action name="Zoom in (secondary)" shortcut="Ctrl+Alt+=" setting="/shortcuts/ZoomIn2"/>
+    <action name="Show Debugging/Development Tools" shortcut="Ctrl+Shift+D" setting="/shortcuts/ShowDevToolsPanel"/>
+    <action name="Zoom in to canvas" shortcut="Ctrl++" setting="/shortcuts/ZoomInToCanvas"/>
+    <action name="Edit last feature in attribute table" shortcut="Ctrl+Alt+}" setting="/shortcuts/mAttributeTableLastEditedFeature"/>
+    <action name="Show Browser Panel" shortcut="Ctrl+Shift+B" setting="/shortcuts/ShowBrowserPanel"/>
+    <action name="Edit first feature in attribute table" shortcut="Ctrl+Alt+{" setting="/shortcuts/mAttributeTableFirstEditedFeature"/>
+    <action name="Nudge profile tool curve to the left" shortcut="Ctrl+Alt+," setting="/shortcuts/mProfileToolNudgeLeft"/>
+    <action name="Show Overview Panel" shortcut="Ctrl+Alt+X" setting="/shortcuts/ShowOverviewPanel"/>
+    <action name="Edit previous feature in attribute table" shortcut="Ctrl+Alt+[" setting="/shortcuts/mAttributeTablePreviousEditedFeature"/>
+    <action name="Nudge profile tool curve to the right" shortcut="Ctrl+Alt+." setting="/shortcuts/mProfileToolNudgeRight"/>
+    <action name="Trigger Locator" shortcut="Ctrl+Q" setting="/shortcuts/Locator"/>
+    <action name="Edit next feature in attribute table" shortcut="Ctrl+Alt+]" setting="/shortcuts/mAttributeTableNextEditedFeature"/>
+    <action name="Show GPS Information Panel" shortcut="" setting="/shortcuts/ShowGpsPanel"/>
+    <action name="Show Style Panel" shortcut="Ctrl+Shift+S" setting="/shortcuts/ShowLayerStylingPanel"/>
+    <action name="Show Undo/Redo Panel" shortcut="Ctrl+Shift+Z" setting="/shortcuts/ShowUndoPanel"/>
+    <action name="Show Bookmarks Panel" shortcut="" setting="/shortcuts/ShowBookmarksPanel"/>
+    <action name="Zoom in to canvas (secondary)" shortcut="Ctrl+=" setting="/shortcuts/ZoomInToCanvas2"/>
+    <action name="Show Statistics Panel" shortcut="" setting="/shortcuts/ShowStatisticsPanel"/>
+    <action name="Show Advanced Digitizing Panel" shortcut="Ctrl+Alt+A" setting="/shortcuts/ShowAdvancedDigitizingPanel"/>
+    <action name="Zoom out of canvas" shortcut="Ctrl+-" setting="/shortcuts/ZoomOutOfCanvas"/>
+    <action name="" shortcut="Ctrl+Shift+." setting="/shortcuts/ToggleTracing"/>
 </qgsshortcuts>
