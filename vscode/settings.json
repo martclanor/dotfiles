@@ -172,11 +172,12 @@
   "window.commandCenter": false,
   "remote.autoForwardPortsSource": "hybrid",
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": true,
     "markdown": true,
     "scminput": false,
-    "python": true
+    "python": true,
+    "typescript": true
   },
   "python.languageServer": "Pylance",
   "github.copilot.editor.enableAutoCompletions": true,
@@ -224,10 +225,10 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "files.associations": {
-    "*.ahk": "ahk"
+    "*.ahk": "ahk",
+    ".tmux.conf.3.0": "ssh_config"
   },
   "files.trimFinalNewlines": true,
-  "editor.formatOnSave": true,
   "git.blame.editorDecoration.enabled": false,
   "editor.minimap.showRegionSectionHeaders": false,
   "editor.accessibilitySupport": "off",
@@ -278,5 +279,6 @@
   },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "editor.formatOnSave": true
 }

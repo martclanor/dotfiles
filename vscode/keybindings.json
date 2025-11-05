@@ -1161,11 +1161,6 @@
     "when": "editorTextFocus && markdownShortcuts:enabled"
   },
   {
-    "key": "ctrl+alt+c",
-    "command": "dendron.copyNoteRef",
-    "when": "dendron:pluginActive && editorFocus"
-  },
-  {
     "key": "ctrl+shift+r",
     "command": "-dendron.copyNoteRef",
     "when": "dendron:pluginActive && editorFocus"
@@ -1994,7 +1989,8 @@
   },
   {
     "key": "ctrl+alt+c",
-    "command": "editor.action.dirtydiff.next"
+    "command": "editor.action.dirtydiff.next",
+    "when": "editorTextFocus && !textCompareEditorActive"
   },
   {
     "key": "alt+c",
