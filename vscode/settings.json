@@ -128,7 +128,6 @@
   "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
   "typescript.tsserver.web.projectWideIntellisense.enabled": false,
   "typescript.tsserver.web.projectWideIntellisense.suppressSemanticErrors": false,
-  "jupyter.notebookFileRoot": "${workspaceFolder}",
   "evenBetterToml.formatter.allowedBlankLines": 2,
   "editor.mouseWheelZoom": true,
   "notebook.confirmDeleteRunningCell": false,
@@ -148,7 +147,6 @@
   "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.minimap.renderCharacters": false,
   "files.exclude": {
     "**/__pycache__": true
   },
@@ -173,11 +171,12 @@
   "remote.autoForwardPortsSource": "hybrid",
   "github.copilot.enable": {
     "*": true,
-    "plaintext": true,
-    "markdown": true,
+    "plaintext": false,
+    "markdown": false,
     "scminput": false,
     "python": true,
-    "typescript": true
+    "typescript": true,
+    "mf6": false
   },
   "python.languageServer": "Pylance",
   "github.copilot.editor.enableAutoCompletions": true,
@@ -256,7 +255,6 @@
   "accessibility.signals.onDebugBreak": {
     "sound": "on"
   },
-  "editor.minimap.enabled": false,
   "workbench.localHistory.maxFileSize": 4096,
   "editor.largeFileOptimizations": false,
   "diffEditor.renderSideBySide": false,
@@ -265,7 +263,6 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.stickyScroll.enabled": false,
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -280,5 +277,10 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.minimap.renderCharacters": false,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "jupyter.notebookFileRoot": "${workspaceFolder}"
 }
