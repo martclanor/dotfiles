@@ -282,5 +282,9 @@
   "terminal.integrated.stickyScroll.enabled": false,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "jupyter.notebookFileRoot": "${workspaceFolder}"
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "jupyter.widgetScriptSources": [
+    "jsdelivr.com",
+    "unpkg.com"
+  ]
 }
