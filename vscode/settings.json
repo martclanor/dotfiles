@@ -170,13 +170,13 @@
   "window.commandCenter": false,
   "remote.autoForwardPortsSource": "hybrid",
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
     "python": true,
     "typescript": true,
-    "mf6": false,
+    "mf6": false
   },
   "python.languageServer": "Pylance",
   "github.copilot.editor.enableAutoCompletions": true,
