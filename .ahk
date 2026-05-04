@@ -5,9 +5,25 @@
 ; right windows key to Shift F10 or RMB
 RWin:: Send("+{F10}")
 
-; right shift to backspace
-RShift::Backspace
-^RShift::^Backspace
+; Right Shift to Backspace with manual repeat logic
+$RShift:: {
+    ; Immediate first press
+    Send("{Backspace}")
+
+    ; Wait for the key's initial delay (standard is 500ms)
+    ErrorLevel := !KeyWait("RShift", "T0.5")
+
+    ; If still held, keep sending Backspace until released
+    if (ErrorLevel) {
+        while GetKeyState("RShift", "P") {
+            Send("{Backspace}")
+            Sleep 30 ; This controls the repeat speed 
+        }
+    }
+}
+
+; Standard Ctrl+RShift mapping
+^RShift::Send("^{Backspace}")
 
 ; capslock to ctrl or esc
 *CapsLock:: Send("{LControl down}")
