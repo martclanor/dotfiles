@@ -41,7 +41,7 @@
     },
     "diffEditor.ignoreTrimWhitespace": false,
   },
-  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.gpuAcceleration": "off",
   "isort.args": ["--profile", "black"],
   "git.ignoreLegacyWarning": true,
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\Users\\clam6\\nvim\\bin\\nvim.exe",
