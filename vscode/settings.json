@@ -176,7 +176,7 @@
     "scminput": false,
     "python": true,
     "typescript": true,
-    "mf6": false
+    "mf6": false,
   },
   "python.languageServer": "Pylance",
   "github.copilot.editor.enableAutoCompletions": true,
@@ -281,9 +281,9 @@
   "editor.minimap.renderCharacters": false,
   "terminal.integrated.stickyScroll.enabled": false,
   "editor.minimap.enabled": false,
-  "editor.stickyScroll.enabled": false,
   "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"],
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "chat.viewSessions.orientation": "stacked",
+  "editor.stickyScroll.enabled": false,
 }
