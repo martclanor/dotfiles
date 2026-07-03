@@ -66,3 +66,5 @@ alias gaup='git add --patch --update'
 alias gc='git commit'
 alias gcv='git commit --verbose'
 alias gcane='git commit --amend --no-edit'
+
+alias dc='docker compose'
