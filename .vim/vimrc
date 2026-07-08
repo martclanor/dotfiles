@@ -54,3 +54,6 @@ let g:netrw_browse_split = 2  " Open file in a vertical split
 
 " Set cursor to a block when Vim starts
 autocmd VimEnter * silent !echo -ne "\e[2 q"
+
+" Set SQL preferences
+autocmd FileType sql setlocal ts=4 sw=4 et keywordprg=
