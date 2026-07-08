@@ -1,0 +1,5 @@
+-- 1. Prevent an un-semicoloned query block from failing completely inside a transaction block
+\set ON_ERROR_ROLLBACK interactive
+
+-- 2. Prevent accidental drops/deletes from processing without a double-check
+\set ON_ERROR_STOP on
